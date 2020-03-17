@@ -3,13 +3,13 @@
     <div id="bannerCarousole" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner banner-slider-inner text-center">
             <div class="carousel-item banner-max-height active">
-                <img class="d-block w-100 h-70" src="img/banner/banner-3.jpg" alt="banner">
+                <img class="d-block w-100 h-70" src="assets/img/banner/banner-3.jpg" alt="banner">
             </div>
             <div class="carousel-item banner-max-height">
-                <img class="d-block w-100 h-70" src="img/banner/banner-2.jpg" alt="banner">
+                <img class="d-block w-100 h-70" src="assets/img/banner/banner-2.jpg" alt="banner">
             </div>
             <div class="carousel-item banner-max-height">
-                <img class="d-block w-100 h-70" src="img/banner/banner-1.jpg" alt="banner">
+                <img class="d-block w-100 h-70" src="assets/img/banner/banner-1.jpg" alt="banner">
             </div>
             <div class="carousel-content container banner-info">
                 <h1 style="font-size: 55px;">Anda Ingin Mencari Sapi dan Kambing ??<br>" Dospi "<br> Solusinya.</h1>
@@ -83,7 +83,7 @@
                         <a href="properties-detailspembeli.html" class="property-img">
                             <div class="tag">Beli Sekarang</div>
                             <div class="price-box"><span>Rp.97.580.000</div>
-                            <img class="d-block w-100 h-100" src="img/properties/Sapi Limusin Coklat.jpg" alt="properties">
+                            <img class="d-block w-100 h-100" src="assets/img/properties/Sapi Limusin Coklat.jpg" alt="properties">
                         </a>
                     </div>
                     <div class="detail">
@@ -122,7 +122,7 @@
                         <a href="properties-detailspembeli.html" class="property-img">
                             <div class="tag">Beli Sekarang</div>
                             <div class="price-box"><span>Rp.115.000.000</div>
-                            <img class="d-block w-100 h-100" src="img/properties/Sapi Brahman Putih.jpg" alt="properties">
+                            <img class="d-block w-100 h-100" src="assets/img/properties/Sapi Brahman Putih.jpg" alt="properties">
                         </a>
                     </div>
                     <div class="detail">
@@ -160,7 +160,7 @@
                         <a href="properties-detailspembeli.html" class="property-img">
                             <div class="tag">Beli Sekarang</div>
                             <div class="price-box"><span>Rp.75.000.000</div>
-                            <img class="d-block w-100" src="img/properties/Sapi Simmental Coklat.jpg" alt="properties">
+                            <img class="d-block w-100" src="assets/img/properties/Sapi Simmental Coklat.jpg" alt="properties">
                         </a>
                     </div>
                     <div class="detail">
@@ -198,7 +198,7 @@
                         <a href="properties-detailspembeli.html" class="property-img">
                             <div class="tag">Beli Sekarang</div>
                             <div class="price-box"><span>Rp.5.800.000</div>
-                            <img class="d-block w-100" src="img/properties/Kambing Etawa.jpg" alt="properties">
+                            <img class="d-block w-100" src="assets/img/properties/Kambing Etawa.jpg" alt="properties">
                         </a>
                     </div>
                     <div class="detail">
@@ -236,7 +236,7 @@
                         <a href="properties-detailspembeli.html" class="property-img">
                             <div class="tag">Beli Sekarang</div>
                             <div class="price-box"><span>Rp.2.750.000</div>
-                            <img class="d-block w-100" src="img/properties/Kambing Jawarandu.jpg" alt="properties">
+                            <img class="d-block w-100" src="assets/img/properties/Kambing Jawarandu.jpg" alt="properties">
                         </a>
                     </div>
                     <div class="detail">
@@ -274,7 +274,7 @@
                         <a href="properties-detailspembeli.html" class="property-img">
                             <div class="tag">Beli Sekarang</div>
                             <div class="price-box"><span>Rp.4.500.000</div>
-                            <img class="d-block w-100" src="img/properties/Kambing Boer.jpg" alt="properties">
+                            <img class="d-block w-100" src="assets/img/properties/Kambing Boer.jpg" alt="properties">
                         </a>
                     </div>
                     <div class="detail">
@@ -442,7 +442,7 @@
                         </div>
                         <div class="user">
                             <div class="photo">
-                                <img class="media-object" src="img/avatar/avatar-1.jpg" alt="user">
+                                <img class="media-object" src="assets/img/avatar/avatar-1.jpg" alt="user">
                             </div>
                             <div class="detail">
                                 <h5>Maikel Alisa</h5>
@@ -467,7 +467,7 @@
 
                         <div class="user">
                             <div class="photo">
-                                <img class="media-object" src="img/avatar/avatar-1.jpg" alt="user">
+                                <img class="media-object" src="assets/img/avatar/avatar-1.jpg" alt="user">
                             </div>
                             <div class="detail">
                                 <h5>Maikel Alisa</h5>
@@ -492,7 +492,7 @@
 
                         <div class="user">
                             <div class="photo">
-                                <img class="media-object" src="img/avatar/avatar-2.jpg" alt="user">
+                                <img class="media-object" src="assets/img/avatar/avatar-2.jpg" alt="user">
                             </div>
                             <div class="detail">
                                 <h5>Auro Navanth</h5>
@@ -526,7 +526,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="blog-2">
                     <div class="blog-photo">
-                        <img src="img/blog/Sapi Limusin Coklat 1.jpg" alt="small-blog" class="img-fluid">
+                        <img src="assets/img/blog/Sapi Limusin Coklat 1.jpg" alt="small-blog" class="img-fluid">
                         <div class="rating-rekom">
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
@@ -553,7 +553,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="blog-2">
                     <div class="blog-photo">
-                        <img src="img/blog/Kambing Etawa 1.jpg" alt="small-blog" class="img-fluid">
+                        <img src="assets/img/blog/Kambing Etawa 1.jpg" alt="small-blog" class="img-fluid">
                        <div class="rating-rekom">
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
@@ -580,7 +580,7 @@
             <div class="col-lg-4 col-md-6 none-992">
                 <div class="blog-2">
                     <div class="blog-photo">
-                        <img src="img/blog/Kambing Jawarandu 1.jpg" alt="small-blog" class="img-fluid">
+                        <img src="assets/img/blog/Kambing Jawarandu 1.jpg" alt="small-blog" class="img-fluid">
                        <div class="rating-rekom">
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
