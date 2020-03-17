@@ -15,7 +15,7 @@
                         <!-- Name -->
                         <h3>Masuk</h3>
                         <!-- Form start -->
-                        <form action="<?php echo base_url().'login_dospi_pembeli/aksi_login' ?>" method="post">
+                        <form action="<?php echo base_url().'login_dospi/aksi_login_pembeli' ?>" method="post">
                             <div class="form-group">
                                 <input type="email" name="email" class="input-text" placeholder="Email">
                             </div>

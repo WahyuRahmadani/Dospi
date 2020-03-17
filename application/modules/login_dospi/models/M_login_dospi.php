@@ -44,7 +44,7 @@ class M_login_dospi extends CI_Model {
 		$this->db->insert('user',$user);	
 	}
 
-	/*end start function register_pemilik*/
+	/*end start function register_pembeli*/
 
 	function cek_login_pembeli($user,$where){
 		return $this->db->get_where($user,$where);

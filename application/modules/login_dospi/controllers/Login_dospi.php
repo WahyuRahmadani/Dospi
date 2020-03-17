@@ -45,12 +45,11 @@ class Login_dospi extends MX_Controller {
 									  'authenticated'=> true
 									);
 				$this->session->set_userdata($data_session);
-				// redirect("crud/index");
+				redirect('halaman_penjual');
 				
 				
 			}else{
-				echo"salaah";
-				/*redirect('crud/form_login');*/
+					echo"<script>alert('Password Anda Salah');window.location='login_dospi';</script>";
 			}
 		}
 
@@ -69,7 +68,7 @@ class Login_dospi extends MX_Controller {
 									  'authenticated'=> true
 									);
 				$this->session->set_userdata($data_session);
-				// redirect("crud/index");
+				redirect('halaman_pembeli');
 				
 				
 			}else{

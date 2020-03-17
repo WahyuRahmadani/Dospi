@@ -21,6 +21,8 @@ class Template extends MX_Controller {
 		$this->load->view('view_template_core');
 		$this->load->view('view_template_core2');
 		$this->load->view('view_template_core3');
+		$this->load->view('view_template_core4');
+		$this->load->view('view_template_core5');
 	}
 
 	public function tampilCore($data)
@@ -42,6 +44,20 @@ class Template extends MX_Controller {
 		$id = $this->session->userdata('session_id');
 		
 		$this->load->view('view_template_core3',$data);
+	}
+
+	public function tampilCore4($data)
+	{
+		$id = $this->session->userdata('session_id');
+		
+		$this->load->view('view_template_core4',$data);
+	}
+
+	public function tampilCore5($data)
+	{
+		$id = $this->session->userdata('session_id');
+		
+		$this->load->view('view_template_core5',$data);
 	}
 
 }
