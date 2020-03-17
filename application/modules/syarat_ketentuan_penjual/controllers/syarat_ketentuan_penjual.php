@@ -8,7 +8,7 @@ class syarat_ketentuan_penjual extends MX_Controller {
 		parent::__construct();
 		// model
 		 $this->load->model('m_syarat_ketentuan_penjual');
-		 $this->load->model('login/m_session');
+		//  $this->load->model('login/m_session');
 	}
 
 	

@@ -8,7 +8,7 @@ class user_pemilik extends MX_Controller {
 		parent::__construct();
 		// model
 		 $this->load->model('m_user_pemilik');
-		 $this->load->model('login/m_session');
+		//  $this->load->model('login/m_session');
 	}
 
 	
