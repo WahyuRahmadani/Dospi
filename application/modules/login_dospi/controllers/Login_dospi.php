@@ -25,7 +25,7 @@ class Login_dospi extends MX_Controller {
 			'namafileview' 	=> "V_login_dospi_pembeli",
 			'tampil'		=> $this->m_login_dospi->tampil(),
 		);
-		echo Modules::run('template/tampilCore', $data);
+		echo Modules::run('template/tampilCore1', $data);
 	}
 
 

@@ -30,7 +30,7 @@
                                 </select>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" name="jenis_hewan" placeholder="Jenis Hewan">
+                                <input type="text" class="form-control" name="your name" placeholder="Jenis Hewan">
                             </div>
                             <div class="form-group">
                                 <select class="selectpicker search-fields" name="Jenis Kelamin">
@@ -40,17 +40,17 @@
                                 </select>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" name="lokasi" placeholder="Lokasi">
+                                <input type="text" class="form-control" name="your name" placeholder="Lokasi">
                             </div>
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 col-sm-6">
                                    <div class="form-group">
-                                <input type="text" class="form-control" name="berat_min" placeholder="Berat Min">
+                                <input type="text" class="form-control" name="your name" placeholder="Berat Min">
                             </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-6">
                                     <div class="form-group">
-                                <input type="text" class="form-control" name="berat_max" placeholder="Berat Max">
+                                <input type="text" class="form-control" name="your name" placeholder="Berat Max">
                             </div>
                                 </div>
                             </div>
