@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="zxx">
 
-<!-- Mirrored from storage.googleapis.com/themevessel-products/fort/index-3pembeli.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Jan 2020 13:24:21 GMT -->
+<!-- Mirrored from storage.googleapis.com/themevessel-products/fort/properties-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Jan 2020 13:24:21 GMT -->
 <head>
-    <title>Dospi HTML Template</title>
+    <title>Fort - Real Estate HTML Template</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
 
@@ -23,25 +23,28 @@
     <link rel="stylesheet" type="text/css"  href="assets/css/dropzone.css">
     <link rel="stylesheet" type="text/css"  href="assets/css/slick.css">
 
-        <!-- Ionicons Script -->
+    <link type="text/css" rel="stylesheet" href="Dospi Template/fonts/font-awesome/css/font-awesome.min.css">
+
+
+    <!-- Ionicons Script -->
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 
     <!-- Custom stylesheet -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" id="style_sheet" href="assets/css/skins/default.css">
 
     <!-- Favicon icon -->
-    <link rel="shortcut icon" href="assets/img/Dospi.png" type="image/x-icon" >
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" >
 
     <!-- Google fonts -->
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,300,700">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link rel="stylesheet" type="text/css" href="css/ie10-viewport-bug-workaround.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/ie10-viewport-bug-workaround.css">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script  src="js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script  src="js/ie-emulation-modes-warning.js"></script>
+    <script  src="assets/js/ie-emulation-modes-warning.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -80,6 +83,7 @@
                             About Us
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="aboutpembeli.html">Tentang Dospi</a>
                             <a class="dropdown-item" href="contact-2pembeli.html">Kontak Kami</a>
                             <a class="dropdown-item" href="typographypembeli.html">Tata Cara Jual & Beli</a>
                             <a class="dropdown-item" href="faqpembeli.html">Faq</a>
@@ -115,27 +119,9 @@
 </header>
 <!-- Main header end -->
 
-
-        <?php 
-                    $this->load->view($namamodule  .'/'.$namafileview);
-         ?>
-
-<!-- Intro section start -->
-<div class="intro-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-9 col-md-8 col-sm-12">
-                <div class="intro-text">
-                    <h3>Apakah Anda Ada Pertanyaan ?</h3>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-12">
-                <a href="contact-2pembeli.html" class="btn btn-md">Chat Disini !</a>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Intro section end -->
+                                <?php
+                                  $this->load->view($namamodule .'/'.$namafileview);
+                                ?>
 
 <!-- Footer start -->
 <footer class="footer">
@@ -218,35 +204,7 @@
     </div>
 </footer>
 <!-- Footer end -->
-
-
-                <!-- The Modal hapus -->
-                  <div class="modal fade" id="keluar" style="top: 15%;">
-                    <div class="modal-dialog modal-md">
-                      <div class="modal-content">
                       
-                        <!-- Modal Header -->
-                        <div class="modal-header">
-                          <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        </div>
-                        
-                        <!-- Modal body -->
-                        <div class="modal-body">
-                          <center><h6>Apakah Anda yakin Untuk Keluar</h6></center>
-                        </div>
-                        
-                        <!-- Modal footer -->
-                        <div class="modal-footer">
-                          <a href="index-3penjual.html" class="btn btn-danger" data-dismiss="modal">Tidak</a>          
-                          <a href="index-3.html" class="btn btn-success">Iya</a>
-                        </div>
-                        
-                      </div>
-                    </div>
-                  </div>
-
-                 <!-- the end modal hapus -->
-
 
 <!-- Full Page Search -->
 <div id="full-page-search">
@@ -282,7 +240,71 @@
 <script  src="assets/js/ie10-viewport-bug-workaround.js"></script>
 <!-- Custom javascript -->
 <script  src="assets/js/ie10-viewport-bug-workaround.js"></script>
+
+
+<script  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0N5pbJN10Y1oYFRd0MJ_v2g8W2QT74JE"></script>
+<script>
+    function LoadMap(propertes) {
+        var defaultLat = 40.7110411;
+        var defaultLng = -74.0110326;
+        var mapOptions = {
+            center: new google.maps.LatLng(defaultLat, defaultLng),
+            zoom: 15,
+            scrollwheel: false,
+            styles: [
+                {
+                    featureType: "administrative",
+                    elementType: "labels",
+                    stylers: [
+                        {visibility: "off"}
+                    ]
+                },
+                {
+                    featureType: "water",
+                    elementType: "labels",
+                    stylers: [
+                        {visibility: "off"}
+                    ]
+                },
+                {
+                    featureType: 'poi.business',
+                    stylers: [{visibility: 'off'}]
+                },
+                {
+                    featureType: 'transit',
+                    elementType: 'labels.icon',
+                    stylers: [{visibility: 'off'}]
+                },
+            ]
+        };
+        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+        var infoWindow = new google.maps.InfoWindow();
+        var myLatlng = new google.maps.LatLng(40.7110411, -74.0110326);
+
+        var marker = new google.maps.Marker({
+            position: myLatlng,
+            map: map
+        });
+        (function (marker) {
+            google.maps.event.addListener(marker, "click", function (e) {
+                infoWindow.setContent("" +
+                    "<div class='map-properties contact-map-content'>" +
+                    "<div class='map-content'>" +
+                    "<p class='address'>20-21 Kathal St. Tampa City, FL</p>" +
+                    "<ul class='map-properties-list'> " +
+                    "<li><i class='flaticon-phone'></i>  +0477 8556 552</li> " +
+                    "<li><i class='flaticon-phone'></i>  info@themevessel.com</li> " +
+                    "<li><a href='index.html'><i class='fa fa-globe'></i>  http://www.example.com</li></a> " +
+                    "</ul>" +
+                    "</div>" +
+                    "</div>");
+                infoWindow.open(map, marker);
+            });
+        })(marker);
+    }
+    LoadMap();
+</script>
 </body>
 
-<!-- Mirrored from storage.googleapis.com/themevessel-products/fort/index-3pembeli.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Jan 2020 13:24:21 GMT -->
+<!-- Mirrored from storage.googleapis.com/themevessel-products/fort/index-3.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Jan 2020 13:24:21 GMT -->
 </html>
