@@ -22,7 +22,7 @@ class Login_dospi extends MX_Controller {
 	{
 		$data = array(
 			'namamodule' 	=> "Login_dospi",
-			'namafileview' 	=> "V_login_dospi",
+			'namafileview' 	=> "V_login_dospi_pembeli",
 			'tampil'		=> $this->m_login_dospi->tampil(),
 		);
 		echo Modules::run('template/tampilCore', $data);
@@ -45,7 +45,7 @@ class Login_dospi extends MX_Controller {
 									  'authenticated'=> true
 									);
 				$this->session->set_userdata($data_session);
-				redirect('halaman_penjual');
+				redirect ('halaman_penjual');
 				
 				
 			}else{
@@ -68,12 +68,11 @@ class Login_dospi extends MX_Controller {
 									  'authenticated'=> true
 									);
 				$this->session->set_userdata($data_session);
-				redirect('halaman_pembeli');
+				/*redirect('halaman_pembeli');*/
 				
 				
 			}else{
-				echo"salaah";
-				/*redirect('crud/form_login');*/
+					echo"<script>alert('Password Anda Salah');window.location='login_dospi';</script>";
 			}
 		}
 
