@@ -13,6 +13,7 @@ class M_tambah_hewan extends CI_Model {
 		// Table Tambah Hewan
 
 		$jenishewan		= $this->input->post('jenis_hewan');
+		$tanggaltambah	= $this->input->post('tanggal_tambah');
 		$ukuranhewan	= $this->input->post('ukuran_hewan');
 		$berathewan		= $this->input->post('berat_hewan');
 		$jeniskelamin	= $this->input->post('jenis_kelamin');
@@ -35,7 +36,8 @@ class M_tambah_hewan extends CI_Model {
 			'nama_pemilik'		=> $namapemilik,
 			'rt_rw'				=> $rtrwpenjual,
 			'kabupaten'			=> $kabupatenkota,
-			'kode_pos'			=> $kodepos
+			'kode_pos'			=> $kodepos,
+			'tanggal_tambah'	=> $tanggaltambah
 		 );
 		$this->db->insert('data_hewan',$data_hewan);
 

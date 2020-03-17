@@ -357,10 +357,20 @@
             <div class="col-lg-4 col-md-12">
                 <div class="sidebar-right">
 
+
+                    <!-- Start Foreach -->
+
+                    <?php foreach($tampil as $shopdetail) {
+                        $id = $shopdetail->id_datahewan;
+                    ?>
+
+
+
+
                     <!-- Recent properties start -->
                     <div class="detail">
                         <br>
-                        <center><h4 class="title">Poniran Ternak</h4></center><br>
+                        <center><h4 class="title"><?php echo $shopdetail->nama_pemilik ?></h4></center><br>
                         <div class="location" style="margin-top: 3%;">
                             <!-- <a href="properties-details.html"> -->
                                 &nbsp;&nbsp;&nbsp;&nbsp;<i class="flaticon-pin"></i>Rt 03 Rw 07 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sidomulyo,Jambewangi,Sempu,Kabupaten &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Banyuwangi (68468)
@@ -368,22 +378,22 @@
                         </div><br>
                         <ul class="facilities-list clearfix">
                              <li>
-                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-github-alt"></i>&nbsp;&nbsp; Sapi Brahman
+                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-github-alt"></i>&nbsp;&nbsp; 
                             </li>
                              <li>
-                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-arrows-alt"></i>&nbsp;&nbsp;&nbsp;2m x 1m x 150cm
+                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-arrows-alt"></i>&nbsp;&nbsp;&nbsp;<?php echo $shopdetail->ukuran_hewan ?>
                             </li>
                             <li>
-                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-balance-scale"></i> 2ton
+                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-balance-scale"></i> <?php echo $shopdetail->berat_hewan ?>&nbsp;Kg
                             </li>
                             <li>
-                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-venus-mars"></i> Jantan/Betina
+                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-venus-mars"></i> <?php echo $shopdetail->jenis_kelamin ?>
                             </li>
                             <li>
-                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-cutlery"></i>&nbsp;&nbsp; Combor
+                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-cutlery"></i>&nbsp;&nbsp; 
                             </li>
                             <li>
-                                &nbsp;&nbsp;&nbsp;&nbsp;<ion-icon name="color-palette" style="font-size: 17px;"></ion-icon>&nbsp; Merah 
+                                &nbsp;&nbsp;&nbsp;&nbsp;<ion-icon name="color-palette" style="font-size: 17px;"></ion-icon>&nbsp; <?php echo $shopdetail->warna_hewan ?> 
                             </li>
                         </ul>
                     </div><br>
@@ -393,10 +403,11 @@
 
                     <!-- Beli Start -->
                      <div style="text-align: center;">
-                        <center><h3 class="belirp" style="margin-bottom: 2%;">Rp 70.000.000</h3></center>
+                        <center><h3 class="belirp" style="margin-bottom: 2%;">Rp&nbsp; <?php echo $shopdetail->harga_hewan ?></h3></center>
                         <button data-target="#modalConfirmWarning" data-toggle="modal" class="btn btn-success col-md">Beli Sekarang</button>
                      </div>
                     <!-- end beli sekarang -->
+ 
 
                     <br>
                     <br>
@@ -448,6 +459,13 @@
                             </div>
                         </div>
                     </div>
+
+
+               <?php } ?>
+
+                    <!-- End Foreach -->
+
+
                    
                     <div class="widget social-links">
                         <h3 class="sidebar-title">Media Sosial</h3>
@@ -586,20 +604,3 @@
     </div>
 </div>
 <!-- Properties details page end -->
-
-<!-- Intro section start -->
-<div class="intro-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-9 col-md-8 col-sm-12">
-                <div class="intro-text">
-                    <h3>Apakah Anda Ada Pertanyaan ?</h3>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-12">
-                <a href="contact-2penjual.html" class="btn btn-md">Chat Disini !</a>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Intro section end

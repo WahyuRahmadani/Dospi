@@ -94,7 +94,7 @@
                             <div class="property-thumbnail">
                                 <a href="properties-detailspenjual.html" class="property-img">
                                     <div class="tag">Beli Sekarang</div>
-                                    <div class="price-box"><span>Rp.<?php echo $shoplist->harga_hewan ?></div>
+                                    <div class="price-box"><span>Rp&nbsp;<?php echo $shoplist->harga_hewan ?></div>
                                     <img class="d-block w-100" src="assets/img/properties/Sapi Limusin Coklat.jpg" alt="properties">
                                 </a>
                             </div>
@@ -112,7 +112,7 @@
                                         <i class="fa fa-arrows-alt"></i>&nbsp;<?php echo $shoplist->ukuran_hewan ?>
                                     </li>
                                     <li>
-                                        <i class="fa fa-balance-scale"></i>&nbsp;<?php echo $shoplist->berat_hewan ?>
+                                        <i class="fa fa-balance-scale"></i>&nbsp;<?php echo $shoplist->berat_hewan ?>&nbsp;Kg
                                     </li>
                                     <li>
                                         <i class="fa fa-venus-mars"></i>&nbsp;<?php echo $shoplist->jenis_kelamin ?>

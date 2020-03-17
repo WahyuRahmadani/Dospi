@@ -32,6 +32,11 @@
                                             <input type="text" class="input-text" name="jenis_hewan" placeholder="Jenis Hewan">
                                         </div>
                                     </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <label>Tanggal:</label><br>
+                                        <input id="datepicker" type="date" name="tanggal_tambah" width="270" />
+
+                                    </div>
                                      <div class="col-lg-4 col-md-4 col-sm-12">
                                         <div class="form-group">
                                             <label>Ukuran Hewan (P/L/T)</label>

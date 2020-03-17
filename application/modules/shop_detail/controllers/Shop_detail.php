@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class shop_detail extends MX_Controller {
+class Shop_detail extends MX_Controller {
 
 	function __construct()
 	{
@@ -20,12 +20,13 @@ class shop_detail extends MX_Controller {
 			'namafileview' 	=> "V_shop_detail",
 			'tampil'		=> $this->m_shop_detail->tampil(),
 		);
-		echo Modules::run('template/tampilCore', $data);
+		echo Modules::run('template/tampilCore4', $data);
 	}
 
-	// shop
-	function shop_detail(){
-		$this->m_shop_detail->shop_detail();
+	function tambah()
+	{
+		$this->m_tambah_hewan->hewan();
+		redirect('Tambah_hewan');
 	}
 
 }
