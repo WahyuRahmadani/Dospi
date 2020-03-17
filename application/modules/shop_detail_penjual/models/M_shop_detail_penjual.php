@@ -1,12 +1,14 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class M_shop_detail extends CI_Model {
+class M_shop_detail_penjual extends CI_Model {
 
 	function tampil()
 	{
 		return $this->db->get('data_hewan')->result();
+
 	}
+
 
 }
 ?>
