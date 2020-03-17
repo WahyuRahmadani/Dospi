@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 17, 2020 at 09:12 AM
+-- Generation Time: Mar 17, 2020 at 11:24 AM
 -- Server version: 10.4.8-MariaDB
 -- PHP Version: 7.3.11
 
@@ -32,17 +32,19 @@ CREATE TABLE `data_hewan` (
   `id_datahewan` int(11) NOT NULL,
   `id_kategori` int(11) NOT NULL,
   `id_jenis` int(11) NOT NULL,
+  `id_makanan` int(11) NOT NULL,
+  `id_gambar` int(11) NOT NULL,
   `ukuran_hewan` int(11) NOT NULL,
   `berat_hewan` int(50) NOT NULL,
   `jenis_kelamin` varchar(50) NOT NULL,
-  `id_makanan` int(11) NOT NULL,
   `warna_hewan` varchar(50) NOT NULL,
+  `deskripsi` varchar(9999) NOT NULL,
   `harga_hewan` int(50) NOT NULL,
   `nama_pemilik` varchar(100) NOT NULL,
   `rt_rw` varchar(20) NOT NULL,
   `kabupaten` varchar(50) NOT NULL,
   `kode_pos` int(15) NOT NULL,
-  `id_gambar` int(11) NOT NULL
+  `tanggal_tambah` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -89,9 +91,9 @@ CREATE TABLE `image_slider` (
 
 CREATE TABLE `jenis_hewan` (
   `id_jenis` int(11) NOT NULL,
-  `jenis_hewan` varchar(100) NOT NULL,
-  `deskripsi` text NOT NULL,
   `id_kategori` int(11) NOT NULL,
+  `jenis_hewan` varchar(100) NOT NULL,
+  `informasi` varchar(9999) NOT NULL,
   `foto` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
