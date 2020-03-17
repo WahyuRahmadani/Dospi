@@ -152,23 +152,6 @@
 </div>
 <!-- Properties section body end -->
 
-<!-- Intro section start -->
-<div class="intro-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-9 col-md-8 col-sm-12">
-                <div class="intro-text">
-                    <h3>Apakah Anda Ada Pertanyaan ?</h3>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-12">
-                <a href="contact-2penjual.html" class="btn btn-md">Chat Disini !</a>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Intro section end -->
-
 
 <!-- The Modal hapus -->
   <div class="modal fade" id="keluar" style="top: 15%;">
