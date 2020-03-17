@@ -8,7 +8,7 @@ class Profil_pembeli extends MX_Controller {
 		parent::__construct();
 		// model
 		 $this->load->model('m_profil_pembeli');
-		 $this->load->model('login/m_session');
+		//  $this->load->model('login/m_session');
 	}
 
 	

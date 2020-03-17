@@ -9,7 +9,7 @@ class Template extends MX_Controller {
 		//load model
 
 		$this->load->model('m_template');
-		$this->load->model('login/m_session');
+		// $this->load->model('login/m_session');
 	}
 
 	
