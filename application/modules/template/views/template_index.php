@@ -100,9 +100,9 @@
                             <i class="flaticon-logout"></i>Masuk
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li class="dropdown"><a class="dropdown-item" href="loginpenjual.html">Penjual</a>
+                            <li class="dropdown"><a class="dropdown-item" href="<?php echo base_url('login_dospi'); ?>">Penjual</a>
                             </li>
-                            <li class="dropdown"><a class="dropdown-item" href="login.html">Pembeli</a>
+                            <li class="dropdown"><a class="dropdown-item" href="<?php echo base_url('login_pembeli'); ?>">Pembeli</a>
                             </li>
                         </ul>
                     </li>

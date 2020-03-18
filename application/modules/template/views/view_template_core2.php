@@ -59,6 +59,11 @@
 <body>
 <div class="page_loader"></div>
 
+<?php 
+$rows = $this->db->query("SELECT * FROM user where email='".$this->session->email."'")->row_array();
+ ?>
+
+
 <!-- Main header start -->
 <header class="main-header header-2 fixed-header">
     <div class="container-fluid">
@@ -113,8 +118,8 @@
                         <li>
                             <div class="dropdown btns">
                                 <a class="dropdown-toggle" data-toggle="dropdown">
-                                    <img src="assets/img/avatar/avatar-1.jpg" alt="avatar">
-                                    Akun Saya
+                                    <img src="<?php echo base_url('assets/img/foto_login/'.$rows['foto_profil']) ?>" alt="avatar">
+                                    <?php echo $rows['username'] ?>
                                 </a>
                                 <div class="dropdown-menu">
                                     <a class="dropdown-item" href="messages.html">Pesan</a>
@@ -129,7 +134,7 @@
                             </div>
                         </li>
                         <div class="navbar-nav ml-auto">
-                            <li class="nav-item">
+                            <li class="nav-item" style="margin-top: -5%;">
                                 <a href="submit-property.html" class="nav-link link-color"><i class="flaticon-plus"></i>Jual Ternakmu Disini !</a>
                             </li>
                         </div> 
