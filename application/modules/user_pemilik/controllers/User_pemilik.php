@@ -20,7 +20,7 @@ class user_pemilik extends MX_Controller {
 			'namafileview' 	=> "V_user_pemilik",
 			'tampil'		=> $this->m_user_pemilik->tampil(),
 		);
-		echo Modules::run('template/tampilCore', $data);
+		echo Modules::run('template/tampilCore1', $data);
 	}
 
 	function register_pemilik(){

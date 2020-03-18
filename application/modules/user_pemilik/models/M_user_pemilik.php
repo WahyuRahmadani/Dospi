@@ -39,6 +39,7 @@ class M_user_pemilik extends CI_Model {
 					   "no_tlp"				=>$no_tlp,
 
 					   'foto_ktp' 			=> $gbr['file_name'],
+					   'foto_profil'		=> 'default.jpg'
 								
 				);
 
@@ -80,6 +81,7 @@ class M_user_pemilik extends CI_Model {
 					   "no_tlp"				=>$no_tlp,
 
 					   'foto_ktp' 			=> $gbr['file_name'],
+					    'foto_profil'		=> 'default.jpg'
 								
 				);
 

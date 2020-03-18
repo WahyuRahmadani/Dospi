@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zxx">
 
-<!-- Mirrored from storage.googleapis.com/themevessel-products/fort/index-3penjual.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Jan 2020 13:24:21 GMT -->
+<!-- Mirrored from storage.googleapis.com/themevessel-products/fort/index-3.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Jan 2020 13:24:21 GMT -->
 <head>
     <title>Dospi HTML Template</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,8 +23,10 @@
     <link rel="stylesheet" type="text/css"  href="assets/css/dropzone.css">
     <link rel="stylesheet" type="text/css"  href="assets/css/slick.css">
 
+
     <!-- Ionicons Script -->
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
 
     <!-- Custom stylesheet -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -51,16 +53,13 @@
 </head>
 <body>
 <div class="page_loader"></div>
-<?php 
-$rows = $this->db->query("SELECT * FROM user where email='".$this->session->email."'")->row_array();
- ?>
 
 
 <!-- Main header start -->
 <header class="main-header fixed-header-2">
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand company-logo" href="index-3penjual.html">
+            <a class="navbar-brand company-logo" href="index-3.html">
                 <img src="assets/img/logos/black-logo.png" alt="logo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -69,12 +68,12 @@ $rows = $this->db->query("SELECT * FROM user where email='".$this->session->emai
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav header-ml">
                     <li >
-                        <a class="nav-link dropdown" href="index-3penjual.html" >
+                        <a class="nav-link dropdown" href="index-3.html" >
                             Home
                         </a>
                     </li>
                     <li class="nav-item dropdown active">
-                        <a class="nav-link dropdown" href="properties-grid-leftsidepenjual.html">
+                        <a class="nav-link dropdown" href="properties-grid-leftside.html">
                             Shop
                         </a>
                     </li>
@@ -83,54 +82,44 @@ $rows = $this->db->query("SELECT * FROM user where email='".$this->session->emai
                             About Us
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="contact-2penjual.html">Kontak Kami</a>
-                            <a class="dropdown-item" href="typographypenjual.html">Tata Cara Jual & Beli</a>
-                            <a class="dropdown-item" href="faq.html">Faq</a>
+                            <a class="dropdown-item" href="contact-2.html">Kontak Kami</a>
+                            <a class="dropdown-item" href="typography.html">Tata Cara Jual & Beli</a>
+                            <a class="dropdown-item" href="faqindex.html">faq</a>
                             <a class="dropdown-item" href="404-2.html">Error</a>
                         </ul>
                     </li>
                     <li >
-                        <a class="nav-link dropdown" href="aboutpenjual.html" >
+                        <a class="nav-link dropdown" href="about.html" >
                             Tentang
                         </a>
                     </li>
                 </ul>
-            </div>
-            <div class="navbar-buttons ml-auto d-none d-xl-block d-lg-block">
-                    <ul>
-                        <li>
-                            <div class="dropdown btns">
-                                <a class="dropdown-toggle" data-toggle="dropdown">
-                                    <img src="<?php echo base_url('assets/img/foto_login/'.$rows['foto_profil']) ?>" alt="avatar">
-                                    <?php echo $rows['username'] ?>
-                                </a>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="dashboard Penjual.html">Dashboard</a>
-                                    <a class="dropdown-item" href="messages.html">Pesan</a>
-                                    <a class="dropdown-item" href="bookings.html">Pemesanan</a>
-                                     <a class="dropdown-item" href="my-profile.html">Setting</a>
-                                    <a class="dropdown-item" href="typography-3penjual.html">Syarat & ketentuan</a>
-                                    <a class="dropdown-item" href="faq.html">Faq</a>
-                                    <a class="dropdown-item" href="index-3.html" data-toggle="modal" data-target="#keluar">Keluar</a>
-                                </div>
-                            </div>
-                        </li>
-                        <div class="navbar-nav ml-auto">
-                            <li class="nav-item" style="margin-top: -4%;">
-                                <a href="submit-property.html" class="nav-link link-color"><i class="flaticon-plus"></i>Jual Ternakmu Disini !</a>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown" href="#">
+                            <i class="flaticon-logout"></i>Masuk
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li class="dropdown"><a class="dropdown-item" href="<?php echo base_url('login_dospi'); ?>">Penjual</a>
                             </li>
-                        </div> 
-                    </ul>
-                </div>
+                            <li class="dropdown"><a class="dropdown-item" href="<?php echo base_url('login_pembeli'); ?>">Pembeli</a>
+                            </li>
+                        </ul>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link link-color" href="loginpenjual.html"><i class="flaticon-plus"></i> Jual Ternakmu Disini</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </div>
 </header>
 <!-- Main header end -->
 
+                                <?php
+                                  $this->load->view($namamodule .'/'.$namafileview);
+                                ?>
 
-        <?php 
-                    $this->load->view($namamodule  .'/'.$namafileview);
-         ?>
 
 <!-- Intro section start -->
 <div class="intro-section">
@@ -142,7 +131,7 @@ $rows = $this->db->query("SELECT * FROM user where email='".$this->session->emai
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-12">
-                <a href="contact-2penjual.html" class="btn btn-md">Chat Disini !</a>
+                <a href="contact-2.html" class="btn btn-md">Chat Disini !</a>
             </div>
         </div>
     </div>
@@ -184,10 +173,10 @@ $rows = $this->db->query("SELECT * FROM user where email='".$this->session->emai
                     </h4>
                     <ul class="links">
                         <li>
-                            <a href="aboutpenjual.html">Tentang Dospi</a>
+                            <a href="about.html">Tentang Dospi</a>
                         </li>
                         <li>
-                            <a href="contact-2penjual.html">Kontak kami</a>
+                            <a href="contact-2.html">Kontak kami</a>
                         </li>
                     </ul>
                 </div>
@@ -196,11 +185,11 @@ $rows = $this->db->query("SELECT * FROM user where email='".$this->session->emai
                 <div class="recent-properties footer-item">
                     <h4>Tata Cara</h4>
                     <div class="media mb-4">
-                        <a class="pr-3" href="properties-detailspenjual.html">
+                        <a class="pr-3" href="properties-details.html">
                         </a>
                         <div class="media-body align-self-center">
                             <h5>
-                                <a href="typography-3penjual.html">Tata Cara Penjualan di Dospi</a>
+                                <a href="typography-3penjualindex.html">Tata Cara Penjualan di Dospi</a>
                             </h5>
                             <div class="listing-post-meta">
 
@@ -208,12 +197,12 @@ $rows = $this->db->query("SELECT * FROM user where email='".$this->session->emai
                         </div>
                     </div>
                     <div class="media mb-4">
-                        <a class="pr-3" href="properties-detailspenjual.html">
+                        <a class="pr-3" href="properties-details.html">
                        
                         </a>
                         <div class="media-body align-self-center">
                             <h5>
-                                <a href="typography-2penjual.html">Tata Cara Pembelian di Dospi</a>
+                                <a href="typography-2pembeliindex.html">Tata Cara Pembelian di Dospi</a>
                             </h5>
                             <div class="listing-post-meta">
                                
@@ -230,39 +219,10 @@ $rows = $this->db->query("SELECT * FROM user where email='".$this->session->emai
 </footer>
 <!-- Footer end -->
 
-
-
-<!-- The Modal hapus -->
-  <div class="modal fade" id="keluar" style="top: 15%;">
-    <div class="modal-dialog modal-md">
-      <div class="modal-content">
-      
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        
-        <!-- Modal body -->
-        <div class="modal-body">
-          <center><h6>Apakah Anda yakin Untuk Keluar</h6></center>
-        </div>
-        
-        <!-- Modal footer -->
-        <div class="modal-footer">
-          <a href="index-3penjual.html" class="btn btn-danger" data-dismiss="modal">Tidak</a>          
-          <a href="index-3.html" class="btn btn-success">Iya</a>
-        </div>
-        
-      </div>
-    </div>
-  </div>
-
- <!-- the end modal hapus -->
-
 <!-- Full Page Search -->
 <div id="full-page-search">
     <button type="button" class="close">×</button>
-    <form action="http://storage.googleapis.com/themevessel-products/fort/index-3penjual.html#">
+    <form action="http://storage.googleapis.com/themevessel-products/fort/index.html#">
         <input type="search" value="" placeholder="type keyword(s) here" />
         <button type="submit" class="btn btn-sm button-theme">Cari</button>
     </form>
