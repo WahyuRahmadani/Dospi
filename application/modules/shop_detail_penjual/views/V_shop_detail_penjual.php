@@ -175,7 +175,7 @@
             </li>
         </ul>
                     <!-- Contact 2 start -->
-                    <div class="contact-2 ca mb-50">
+                    <div class="contact-2 ca mb-50"><br><br><br>
                         <h3 class="heading">Ikut Berdiskusi...</h3>
                             <form action="<?php echo base_url().'shop_detail_penjual/komentar'?>" method="post" enctype="multipart/form-data">
                             <div class="row">
@@ -227,7 +227,6 @@
                     <!-- Start Foreach -->
 
                     <?php foreach($tampil as $shopdetail) {
-                        $id = $shopdetail->id_datahewan;
                     ?>
 
                     <!-- Recent properties start -->
@@ -241,7 +240,7 @@
                         </div><br>
                         <ul class="facilities-list clearfix">
                              <li>
-                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-github-alt"></i>&nbsp;&nbsp; 
+                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-github-alt"></i>&nbsp;&nbsp; <?php echo $shopdetail->nama_hewan ?>
                             </li>
                              <li>
                                 &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-arrows-alt"></i>&nbsp;&nbsp;&nbsp;<?php echo $shopdetail->ukuran_hewan ?>
@@ -253,7 +252,7 @@
                                 &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-venus-mars"></i> <?php echo $shopdetail->jenis_kelamin ?>
                             </li>
                             <li>
-                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-cutlery"></i>&nbsp;&nbsp; 
+                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-cutlery"></i>&nbsp;&nbsp; <?php echo $shopdetail->nama_makanan ?>
                             </li>
                             <li>
                                 &nbsp;&nbsp;&nbsp;&nbsp;<ion-icon name="color-palette" style="font-size: 17px;"></ion-icon>&nbsp; <?php echo $shopdetail->warna_hewan ?> 
