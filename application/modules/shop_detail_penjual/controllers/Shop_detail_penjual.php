@@ -8,6 +8,7 @@ class Shop_detail_penjual extends MX_Controller {
 		parent::__construct();
 		// model
 		 $this->load->model('m_shop_detail_penjual');
+		 $this->load->helper(array('form','url'));
 		//  $this->load->model('login/m_session');
 	}
 
@@ -21,6 +22,30 @@ class Shop_detail_penjual extends MX_Controller {
 			'tampil'		=> $this->m_shop_detail_penjual->tampil(),
 		);
 		echo Modules::run('template/tampilCore4', $data);
+
+
+		$data = array(
+			'namamodule' 	=> "shop_detail_penjual",
+			'namafileview' 	=> "V_shop_detail_penjual",
+			'join_spec'		=> $this->m_shop_detail_penjual->join_spec(),
+		);
+		echo Modules::run('template/tampilCore4', $data);
+
+	}
+	function komentar()
+	{
+		$this->m_shop_detail_penjual->komentar();
+		redirect('Shop_detail_penjual');     
+	}
+	function balas()
+	{
+		$this->m_shop_detail_penjual->balas();
+		   
+	}
+	function hapus($id)
+	{
+		$this->m_shop_detail_penjual->hapus($id);
+
 	}
 
 }

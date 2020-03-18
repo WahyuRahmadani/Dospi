@@ -9,10 +9,6 @@ class Tambah_hewan extends MX_Controller {
 		// model
 		 $this->load->model('m_tambah_hewan');
 
-		 // dropzone
-         // $this->load->helper(array('form','url'));
-
-		 // $this->load->model('login/m_session');
 	}
 
 	
