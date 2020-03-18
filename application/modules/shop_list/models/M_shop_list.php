@@ -5,7 +5,17 @@ class M_shop_list extends CI_Model {
 
 	function tampil()
 	{
-		return $this->db->get('data_hewan')->result();
+		$this->db->select('*')
+				 ->from('data_hewan')
+				 ->join('jenis_hewan', 'jenis_hewan.id_jenis = data_hewan.id_jenis')
+				 ->join('tb_makanan','tb_makanan.id_makanan = data_hewan.id_makanan')
+				 ->join('gambar_hewan', 'gambar_hewan.id_gambar = data_hewan.id_gambar');
+		$query = $this->db->get();
+		return $query->result();
+
+
+			// $query = $this->db->query('select * from data_hewan a join jenis_hewan b  join tb_makanan c on a.id_jenis=b.id_jenis and a.id_makanan=c.id_makanan')->result();
+			// return $query;
 	}
 
 	function hewan()

@@ -84,7 +84,6 @@
 
 
     <?php foreach($tampil as $shoplist) {
-        $id = $shoplist->id_datahewan;
     ?>
 
 
@@ -94,34 +93,34 @@
                             <div class="property-thumbnail">
                                 <a href="properties-detailspenjual.html" class="property-img">
                                     <div class="tag">Beli Sekarang</div>
-                                    <div class="price-box"><span>Rp&nbsp;<?php echo $shoplist->harga_hewan ?></div>
-                                    <img class="d-block w-100" src="assets/img/properties/Sapi Limusin Coklat.jpg" alt="properties">
+                                    <div class="price-box"><span>Rp&nbsp;<?php echo $shoplist->harga_hewan; ?></div>
+                                    <img class="d-block w-100" src="assets/img/properties/Sapi Limusin Coklat.jpg" value="<?php echo $shoplist->gambar ?>" alt="properties">
                                 </a>
                             </div>
                             <div class="detail">
                                 <h1 class="title">
-                                    <a href="properties-detailspenjual.html"></a>
+                                    <a href="properties-detailspenjual.html"><?php echo $shoplist->jenis_hewan; ?></a>
                                 </h1>
                                 <div class="location">
                                     <a href="properties-detailspenjual.html">
-                                        <i class="flaticon-pin"></i><?php echo $shoplist->kabupaten ?>
+                                        <i class="flaticon-pin"></i><?php echo $shoplist->kabupaten; ?>
                                     </a>
                                 </div>
                                 <ul class="facilities-list clearfix">
                                     <li>
-                                        <i class="fa fa-arrows-alt"></i>&nbsp;<?php echo $shoplist->ukuran_hewan ?>
+                                        <i class="fa fa-arrows-alt"></i>&nbsp;<?php echo $shoplist->ukuran_hewan; ?>
                                     </li>
                                     <li>
-                                        <i class="fa fa-balance-scale"></i>&nbsp;<?php echo $shoplist->berat_hewan ?>&nbsp;Kg
+                                        <i class="fa fa-balance-scale"></i>&nbsp;<?php echo $shoplist->berat_hewan; ?>&nbsp;Kg
                                     </li>
                                     <li>
-                                        <i class="fa fa-venus-mars"></i>&nbsp;<?php echo $shoplist->jenis_kelamin ?>
+                                        <i class="fa fa-venus-mars"></i>&nbsp;<?php echo $shoplist->jenis_kelamin; ?>
                                     </li>
                                     <li>
-                                        <i class="fa fa-cutlery"></i>&nbsp;
+                                        <i class="fa fa-cutlery"></i>&nbsp;<?php echo $shoplist->nama_makanan; ?>
                                     </li>
                                     <li>
-                                        <ion-icon name="color-palette" style="font-size: 17px;"></ion-icon>&nbsp;<?php echo $shoplist->warna_hewan ?>
+                                        <ion-icon name="color-palette" style="font-size: 17px;"></ion-icon>&nbsp;<?php echo $shoplist->warna_hewan; ?>
                                     </li>
                                 </ul>
                             </div>

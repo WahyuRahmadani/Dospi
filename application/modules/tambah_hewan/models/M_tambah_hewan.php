@@ -6,6 +6,17 @@ class M_tambah_hewan extends CI_Model {
 	function tampil()
 	{
 		return $this->db->get('data_hewan')->result();
+
+				// join
+			$this->db->select('*')
+				->from('data_hewan')
+				->join('gambar_hewan', 'data_hewan.id_gambar = gambar_hewan.id_gambar')
+				->join('jenis_hewan', 'data_hewan.id_jenis = jenis_hewan.id_jenis')
+				->join('kategori_hewan', 'data_hewan.id_kategori = kategori_hewan.id_kategori')
+				->join('tb_makanan', 'data_hewan.id_makanan = tb_makanan.id_makanan')
+				->where('data_hewan.id_datahewan',$id_datahewan);
+			$query = $this->db->get();
+			return $query;
 	}
 
 	function hewan()
@@ -51,7 +62,8 @@ class M_tambah_hewan extends CI_Model {
 		$config['max_size']			= 5120;
 		$config['max_width']		= 4300;
 		$config['max_height']		= 4300;
-		$config['file_name'] 		= $nmfile;
+		$config['file_name'] 		= $new_name;
+		$new_name = time().$_FILES["file_name"]['name'];
 		
 		$this->upload->initialize($config);
 		$this->upload->do_upload('gambar1');
