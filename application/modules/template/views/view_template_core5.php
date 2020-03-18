@@ -55,6 +55,10 @@
 <body>
 <div class="page_loader"></div>
 
+<?php 
+$rows = $this->db->query("SELECT * FROM user where email='".$this->session->email."'")->row_array();
+ ?>
+
 
 <!-- Main header start -->
 <header class="main-header fixed-header-2">
@@ -102,8 +106,8 @@
                         <li>
                             <div class="dropdown btns">
                                 <a class="dropdown-toggle" data-toggle="dropdown">
-                                    <img src="assets/img/avatar/avatar-1.jpg" alt="avatar">
-                                    Profil saya
+                                    <img src="<?php echo base_url('assets/img/foto_login/'.$rows['foto_profil']) ?>" alt="avatar">
+                                    <?php echo $rows['username'] ?>
                                 </a>
                                 <div class="dropdown-menu">
                                     <a class="dropdown-item" href="bookings2.html">Dashboard</a>

@@ -25,7 +25,7 @@
                             <div class="form-group mb-0">
                                 <label>
                                         <button class="btn-md button-theme btn-block" style="width: 30%; left: 35%; position: absolute;">Masuk</button><br><br><br>
-                                        <a href="index-3.html" class="btn-md button-theme btn-block" style="width: 30%; left: 35%; position: absolute;">Kembali</a>
+                                        <a href="<?php echo base_url('halaman_index'); ?>" class="btn-md button-theme btn-block" style="width: 30%; left: 35%; position: absolute;">Kembali</a>
                                 </label>
                             </div>
                             <br>

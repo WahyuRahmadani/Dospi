@@ -30,6 +30,7 @@ class Login_pembeli extends MX_Controller {
 
 
 	function aksi_login_pembeli(){
+
 			$email = $this->input->post('email');
 			$password = $this->input->post('password');
 

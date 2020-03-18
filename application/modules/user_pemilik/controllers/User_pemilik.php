@@ -17,7 +17,7 @@ class user_pemilik extends MX_Controller {
 	{
 		$data = array(
 			'namamodule' 	=> "user_pemilik",
-			'namafileview' 	=> "V_user_pemilik",
+			'namafileview' 	=> "V_user_pembeli",
 			'tampil'		=> $this->m_user_pemilik->tampil(),
 		);
 		echo Modules::run('template/tampilCore1', $data);

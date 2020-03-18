@@ -49,7 +49,7 @@ class Login_dospi extends MX_Controller {
 				
 				
 			}else{
-					echo"<script>alert('Password Anda Salah');window.location='login_dospi';</script>";
+					redirect ('login_dospi');
 			}
 		}
 

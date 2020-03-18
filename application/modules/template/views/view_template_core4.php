@@ -105,13 +105,13 @@ $rows = $this->db->query("SELECT * FROM user where email='".$this->session->emai
                                     <?php echo $rows['username'] ?>
                                 </a>
                                 <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="dashboard Penjual.html">Dashboard</a>
-                                    <a class="dropdown-item" href="messages.html">Pesan</a>
-                                    <a class="dropdown-item" href="bookings.html">Pemesanan</a>
-                                     <a class="dropdown-item" href="my-profile.html">Setting</a>
-                                    <a class="dropdown-item" href="typography-3penjual.html">Syarat & ketentuan</a>
-                                    <a class="dropdown-item" href="faq.html">Faq</a>
-                                    <a class="dropdown-item" href="index-3.html" data-toggle="modal" data-target="#keluar">Keluar</a>
+                                    <a class="dropdown-item" href="<?php echo base_url('dashboard_penjual'); ?>">Dashboard</a>
+                                    <a class="dropdown-item" href="<?php echo base_url('pesan'); ?>">Pesan</a>
+                                    <a class="dropdown-item" href="<?php echo base_url('pemesanan_penjual'); ?>">Pemesanan</a>
+                                     <a class="dropdown-item" href="<?php echo base_url('edit_profil'); ?>">Setting</a>
+                                    <a class="dropdown-item" href="<?php echo base_url('syarat_ketentuan_penjual'); ?>">Syarat & ketentuan</a>
+                                    <a class="dropdown-item" href="<?php echo base_url('faq_dashboard_penjual'); ?>">Faq</a>
+                                    <a class="dropdown-item" href="<?php echo base_url('halaman_index'); ?>" data-toggle="modal" data-target="#keluar">Keluar</a>
                                 </div>
                             </div>
                         </li>
@@ -249,8 +249,8 @@ $rows = $this->db->query("SELECT * FROM user where email='".$this->session->emai
         
         <!-- Modal footer -->
         <div class="modal-footer">
-          <a href="index-3penjual.html" class="btn btn-danger" data-dismiss="modal">Tidak</a>          
-          <a href="index-3.html" class="btn btn-success">Iya</a>
+          <a href="<?php echo base_url('halaman_penjual'); ?>" class="btn btn-danger" data-dismiss="modal">Tidak</a>          
+          <a href="<?php echo base_url('halaman_index'); ?>" class="btn btn-success">Iya</a>
         </div>
         
       </div>
