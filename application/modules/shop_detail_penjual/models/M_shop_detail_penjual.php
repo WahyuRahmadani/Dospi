@@ -1,4 +1,4 @@
- <?php
+<?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class M_shop_detail_penjual extends CI_Model {
@@ -6,8 +6,8 @@ class M_shop_detail_penjual extends CI_Model {
 	function tampil()
 	{
 		$this->db->select('*');
-		$this->db->from('tb_komentar');
-		$this->db->join('data_hewan', 'data_hewan.id_datahewan = tb_komentar.id_datahewan');
+		$this->db->from('data_hewan');
+		$this->db->join('tb_komentar', 'tb_komentar.id_datahewan = data_hewan.id_datahewan');
 		$query = $this->db->get();
 
 		return $query->result();
