@@ -92,7 +92,7 @@
                     <div class="col-lg-6 col-md-6 col-sm-12">
                         <div class="property-box">
                             <div class="property-thumbnail">
-                                <a href="properties-detailspenjual.html" class="property-img">
+                                <a href="" class="property-img">
                                     <div class="tag">Beli Sekarang</div>
                                     <div class="price-box"><span>Rp&nbsp;<?php echo $shoplist->harga_hewan; ?></div>
                                     <img class="d-block w-100" src="assets/img/properties/Sapi Limusin Coklat.jpg" value="<?php echo $shoplist->gambar ?>" alt="properties">
@@ -100,7 +100,7 @@
                             </div>
                             <div class="detail">
                                 <h1 class="title">
-                                    <a href="properties-detailspenjual.html"><?php echo $shoplist->jenis_hewan; ?></a>
+                                    <a href="<?php echo base_url('shop_detail_penjual') ?>"><?php echo $shoplist->jenis_hewan; ?></a>
                                 </h1>
                                 <div class="location">
                                     <a href="properties-detailspenjual.html">
