@@ -13,11 +13,7 @@ class M_shop_detail_penjual extends CI_Model {
 		return $query->result();
 
 
-	}
-
-	function join_spec(){
-
-				// Join spesifikasi hewan
+						// Join spesifikasi hewan
 
 		$this->db->select('*')
 				 ->from('data_hewan')
@@ -26,6 +22,8 @@ class M_shop_detail_penjual extends CI_Model {
 				 ->join('gambar_hewan', 'gambar_hewan.id_gambar = data_hewan.id_gambar');
 		$query = $this->db->get();
 		return $query->result();
+
+
 	}
 
 	
