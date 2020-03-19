@@ -83,11 +83,12 @@
                 </div>
 
 
-    <?php foreach($tampil as $shoplist) {
-    ?>
+
 
 
                 <div class="row">
+                        <?php foreach($tampil as $shoplist) {
+                        ?>
                     <div class="col-lg-6 col-md-6 col-sm-12">
                         <div class="property-box">
                             <div class="property-thumbnail">
@@ -126,9 +127,10 @@
                             </div>
                         </div>
                     </div>
+                        <?php } ?>
                 </div>
 
-                <?php } ?>
+
                 <!-- Page navigation start -->
                 <div class="pagination-box text-center">
                     <nav aria-label="Page navigation example">
