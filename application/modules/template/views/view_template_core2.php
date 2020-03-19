@@ -107,7 +107,7 @@ $rows = $this->db->query("SELECT * FROM user where email='".$this->session->emai
                         <a href="<?php echo base_url('syarat_ketentuan_penjual'); ?>" class="nav-link">Syarat & ketentuan</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a href="<?php echo base_url('faq_penjual'); ?>" class="nav-link">Faq</a>
+                        <a href="<?php echo base_url('faq_dashboard_penjual'); ?>" class="nav-link">Faq</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a href="<?php echo base_url('halaman_index'); ?>" class="nav-link">Keluar</a>
@@ -128,7 +128,7 @@ $rows = $this->db->query("SELECT * FROM user where email='".$this->session->emai
                                     <a class="dropdown-item" href="<?php echo base_url('profil_saya'); ?>">Profil Saya</a>
                                     <a class="dropdown-item" href="<?php echo base_url('edit_profil'); ?>">Setting</a>
                                     <a class="dropdown-item" href="<?php echo base_url('syarat_ketentuan_penjual'); ?>">Syarat & ketentuan</a>
-                                    <a class="dropdown-item" href="<?php echo base_url('faq_penjual'); ?>">Faq</a>
+                                    <a class="dropdown-item" href="<?php echo base_url('faq_dashboard_penjual'); ?>">Faq</a>
                                     <a class="dropdown-item" href="<?php echo base_url('halaman_index'); ?>" data-toggle="modal" data-target="#keluar">Keluar</a>
                                 </div>
                             </div>
@@ -158,7 +158,7 @@ $rows = $this->db->query("SELECT * FROM user where email='".$this->session->emai
                             <li><a href="<?php echo base_url('dashboard_penjual'); ?>"><i class="flaticon-dashboard Penjual"></i> Dashboard</a></li>
                             <li><a href="<?php echo base_url('pesan_penjual'); ?>"><i class="flaticon-mail"></i> Pesan <span class="nav-tag">5</span></a></li>
                             <li><a href="<?php echo base_url('pemesanan_penjual'); ?>"><i class="flaticon-calendar"></i> Pemesanan</a></li>
-                            <li><a href="<?php echo base_url('pembelian'); ?>"><i class="fa fa-money"></i> Pembelian</a></li>
+                            <li><a href="<?php echo base_url('pembelian_penjual'); ?>"><i class="fa fa-money"></i> Pembelian</a></li>
                             <li><a href="<?php echo base_url('riwayat_pembayaran_penjual'); ?>"><i class="fa fa-history"></i> Riwayat Pembayaran</a></li>
                         </ul>
                         <h4>DAFTAR</h4>
@@ -172,7 +172,7 @@ $rows = $this->db->query("SELECT * FROM user where email='".$this->session->emai
                             <li><a href="<?php echo base_url('profil_saya'); ?>"><i class="fa fa-user"></i>Profil Saya</a></li>
                             <li><a href="<?php echo base_url('edit_profil'); ?>"><i class="fa fa-gear"></i>Setting</a></li>
                             <li><a href="<?php echo base_url('syarat_ketentuan_penjual'); ?>"><i class="flaticon-bill"></i>Syarat & ketentuan</a></li>
-                            <li><a href="<?php echo base_url('faq_penjual'); ?>"><i class="fa fa-question-circle-o"></i>Faq</a></li>
+                            <li><a href="<?php echo base_url('faq_dashboard_penjual'); ?>"><i class="fa fa-question-circle-o"></i>Faq</a></li>
                             <li><a href="<?php echo base_url('halaman_index'); ?>"><i class="flaticon-logout"></i>Keluar</a></li>
                         </ul>
                     </div>
