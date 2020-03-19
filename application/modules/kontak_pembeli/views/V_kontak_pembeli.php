@@ -20,7 +20,7 @@
             <h1>Kontak Dospi</h1>
         </div>
         <!-- Contact info -->
-        <form action="#" method="GET" enctype="multipart/form-data">
+        <form method="post" action="<?php echo base_url().'kontak_pembeli/tambah' ?>" enctype="multipart/form-data">
             <div class="row">
                 <div class="col-lg-4">
                     <div class="contact-info-2">
@@ -49,29 +49,14 @@
                 </div>
                 <div class="offset-lg-1 col-lg-7">
                     <div class="row">
-                        <div class="col-md-6 text-left">
-                            <div class="form-group name">
-                                <input type="text" name="name" class="form-control" placeholder="Nama" style="color: #333;">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group email">
-                                <input type="email" name="email" class="form-control" placeholder="Email" style="color: #333;">
-                            </div>
-                        </div>
                         <div class="col-md-6">
                             <div class="form-group subject">
-                                <input type="text" name="subject" class="form-control" placeholder="Subject" style="color: #333;">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group number">
-                                <input type="text" name="phone" class="form-control" placeholder="Nomor" style="color: #333;">
+                                <input type="text" name="judul" class="form-control" placeholder="Subject" style="color: #333;">
                             </div>
                         </div>
                         <div class="col-md-12">
                             <div class="form-group message">
-                                <textarea class="form-control" name="message" placeholder="Tulis pesan" style="color: #333;"></textarea>
+                                <textarea class="form-control" name="pesan" placeholder="Tulis pesan" style="color: #333;"></textarea>
                             </div>
                         </div>
                         <div class="col-md-12">

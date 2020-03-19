@@ -1,4 +1,4 @@
-<?php
+r<?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Profil_saya extends MX_Controller {

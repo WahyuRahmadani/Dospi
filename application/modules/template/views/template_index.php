@@ -59,7 +59,7 @@
 <header class="main-header fixed-header-2">
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand company-logo" href="index-3.html">
+            <a class="navbar-brand company-logo" href="<?php echo base_url('halaman_index'); ?>">
                 <img src="assets/img/logos/black-logo.png" alt="logo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -68,7 +68,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav header-ml">
                     <li >
-                        <a class="nav-link dropdown" href="index-3.html" >
+                        <a class="nav-link dropdown" href="<?php echo base_url('halaman_index'); ?>" >
                             Home
                         </a>
                     </li>
@@ -82,14 +82,14 @@
                             About Us
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="contact-2.html">Kontak Kami</a>
-                            <a class="dropdown-item" href="typography.html">Tata Cara Jual & Beli</a>
-                            <a class="dropdown-item" href="faqindex.html">faq</a>
+                            <a class="dropdown-item" href="<?php echo base_url('kontak_index'); ?>">Kontak Kami</a>
+                            <a class="dropdown-item" href="<?php echo base_url('tata_cara_index'); ?>">Tata Cara Jual & Beli</a>
+                            <a class="dropdown-item" href="<?php echo base_url('faq_index'); ?>">faq</a>
                             <a class="dropdown-item" href="404-2.html">Error</a>
                         </ul>
                     </li>
                     <li >
-                        <a class="nav-link dropdown" href="about.html" >
+                        <a class="nav-link dropdown" href="<?php echo base_url('tentang_dospi_index'); ?>" >
                             Tentang
                         </a>
                     </li>
@@ -107,7 +107,7 @@
                         </ul>
                     </li>
                      <li class="nav-item">
-                        <a class="nav-link link-color" href="loginpenjual.html"><i class="flaticon-plus"></i> Jual Ternakmu Disini</a>
+                        <a class="nav-link link-color" href="<?php echo base_url('login_dospi'); ?>"><i class="flaticon-plus"></i> Jual Ternakmu Disini</a>
                     </li>
                 </ul>
             </div>
@@ -131,7 +131,7 @@
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-12">
-                <a href="contact-2.html" class="btn btn-md">Chat Disini !</a>
+                <a href="<?php echo base_url('kontak_index'); ?>" class="btn btn-md">Chat Disini !</a>
             </div>
         </div>
     </div>
@@ -173,10 +173,10 @@
                     </h4>
                     <ul class="links">
                         <li>
-                            <a href="about.html">Tentang Dospi</a>
+                            <a href="<?php echo base_url('tentang_dospi_index'); ?>">Tentang Dospi</a>
                         </li>
                         <li>
-                            <a href="contact-2.html">Kontak kami</a>
+                            <a href="<?php echo base_url('kontak_index'); ?>">Kontak kami</a>
                         </li>
                     </ul>
                 </div>
@@ -189,7 +189,7 @@
                         </a>
                         <div class="media-body align-self-center">
                             <h5>
-                                <a href="typography-3penjualindex.html">Tata Cara Penjualan di Dospi</a>
+                                <a href="<?php echo base_url('cara_penjualan_index'); ?>">Tata Cara Penjualan di Dospi</a>
                             </h5>
                             <div class="listing-post-meta">
 
@@ -202,7 +202,7 @@
                         </a>
                         <div class="media-body align-self-center">
                             <h5>
-                                <a href="typography-2pembeliindex.html">Tata Cara Pembelian di Dospi</a>
+                                <a href="<?php echo base_url('cara_pembelian_index'); ?>">Tata Cara Pembelian di Dospi</a>
                             </h5>
                             <div class="listing-post-meta">
                                

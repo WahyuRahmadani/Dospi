@@ -32,7 +32,7 @@
                             <div class="checkbox">
                                 <div class="ez-checkbox pull-left">
                                     <label>
-                                        <a href="forgot-passwordpenjual.html">Lupa password</a>
+                                        <a href="<?php echo base_url('lupa_password_pembeli'); ?>">Lupa password</a>
                                     </label>
                                 </div>
                             </div>

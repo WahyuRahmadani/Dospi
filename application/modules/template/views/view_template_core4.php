@@ -60,7 +60,7 @@ $rows = $this->db->query("SELECT * FROM user where email='".$this->session->emai
 <header class="main-header fixed-header-2">
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand company-logo" href="index-3penjual.html">
+            <a class="navbar-brand company-logo" href="<?php echo base_url('halaman_penjual'); ?>">
                 <img src="assets/img/logos/black-logo.png" alt="logo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -69,7 +69,7 @@ $rows = $this->db->query("SELECT * FROM user where email='".$this->session->emai
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav header-ml">
                     <li >
-                        <a class="nav-link dropdown" href="index-3penjual.html" >
+                        <a class="nav-link dropdown" href="<?php echo base_url('halaman_penjual'); ?>" >
                             Home
                         </a>
                     </li>
@@ -83,14 +83,14 @@ $rows = $this->db->query("SELECT * FROM user where email='".$this->session->emai
                             About Us
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="contact-2penjual.html">Kontak Kami</a>
-                            <a class="dropdown-item" href="typographypenjual.html">Tata Cara Jual & Beli</a>
-                            <a class="dropdown-item" href="faq.html">Faq</a>
+                            <a class="dropdown-item" href="<?php echo base_url('kontak_penjual'); ?>">Kontak Kami</a>
+                            <a class="dropdown-item" href="<?php echo base_url('tata_cara_penjual'); ?>">Tata Cara Jual & Beli</a>
+                            <a class="dropdown-item" href="<?php echo base_url('faq_penjual'); ?>">Faq</a>
                             <a class="dropdown-item" href="404-2.html">Error</a>
                         </ul>
                     </li>
                     <li >
-                        <a class="nav-link dropdown" href="aboutpenjual.html" >
+                        <a class="nav-link dropdown" href="<?php echo base_url('tentang_dospi_penjual'); ?>" >
                             Tentang
                         </a>
                     </li>
@@ -106,7 +106,7 @@ $rows = $this->db->query("SELECT * FROM user where email='".$this->session->emai
                                 </a>
                                 <div class="dropdown-menu">
                                     <a class="dropdown-item" href="<?php echo base_url('dashboard_penjual'); ?>">Dashboard</a>
-                                    <a class="dropdown-item" href="<?php echo base_url('pesan'); ?>">Pesan</a>
+                                    <a class="dropdown-item" href="<?php echo base_url('pesan_penjual'); ?>">Pesan</a>
                                     <a class="dropdown-item" href="<?php echo base_url('pemesanan_penjual'); ?>">Pemesanan</a>
                                      <a class="dropdown-item" href="<?php echo base_url('edit_profil'); ?>">Setting</a>
                                     <a class="dropdown-item" href="<?php echo base_url('syarat_ketentuan_penjual'); ?>">Syarat & ketentuan</a>
@@ -117,7 +117,7 @@ $rows = $this->db->query("SELECT * FROM user where email='".$this->session->emai
                         </li>
                         <div class="navbar-nav ml-auto">
                             <li class="nav-item" style="margin-top: -4%;">
-                                <a href="submit-property.html" class="nav-link link-color"><i class="flaticon-plus"></i>Jual Ternakmu Disini !</a>
+                                <a href="<?php echo base_url('tambah_hewan'); ?>" class="nav-link link-color"><i class="flaticon-plus"></i>Jual Ternakmu Disini !</a>
                             </li>
                         </div> 
                     </ul>
@@ -142,7 +142,7 @@ $rows = $this->db->query("SELECT * FROM user where email='".$this->session->emai
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-12">
-                <a href="contact-2penjual.html" class="btn btn-md">Chat Disini !</a>
+                <a href="<?php echo base_url('kontak_penjual'); ?>" class="btn btn-md">Chat Disini !</a>
             </div>
         </div>
     </div>
@@ -184,10 +184,10 @@ $rows = $this->db->query("SELECT * FROM user where email='".$this->session->emai
                     </h4>
                     <ul class="links">
                         <li>
-                            <a href="aboutpenjual.html">Tentang Dospi</a>
+                            <a href="<?php echo base_url('tentang_dospi_penjual'); ?>">Tentang Dospi</a>
                         </li>
                         <li>
-                            <a href="contact-2penjual.html">Kontak kami</a>
+                            <a href="<?php echo base_url('kontak_penjual'); ?>">Kontak kami</a>
                         </li>
                     </ul>
                 </div>
@@ -200,7 +200,7 @@ $rows = $this->db->query("SELECT * FROM user where email='".$this->session->emai
                         </a>
                         <div class="media-body align-self-center">
                             <h5>
-                                <a href="typography-3penjual.html">Tata Cara Penjualan di Dospi</a>
+                                <a href="<?php echo base_url('cara_penjualan_penjual'); ?>">Tata Cara Penjualan di Dospi</a>
                             </h5>
                             <div class="listing-post-meta">
 
@@ -213,7 +213,7 @@ $rows = $this->db->query("SELECT * FROM user where email='".$this->session->emai
                         </a>
                         <div class="media-body align-self-center">
                             <h5>
-                                <a href="typography-2penjual.html">Tata Cara Pembelian di Dospi</a>
+                                <a href="<?php echo base_url('cara_pembelian_penjual'); ?>">Tata Cara Pembelian di Dospi</a>
                             </h5>
                             <div class="listing-post-meta">
                                

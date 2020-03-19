@@ -32,7 +32,7 @@
                             <div class="checkbox">
                                 <div class="ez-checkbox pull-left">
                                     <label>
-                                        <a href="forgot-passwordpenjual.html">Lupa password</a>
+                                        <a href="lupa_password_penjual">Lupa password</a>
                                     </label>
                                 </div>
                             </div>
