@@ -23,15 +23,9 @@ class Shop_detail_penjual extends MX_Controller {
 		);
 		echo Modules::run('template/tampilCore4', $data);
 
-
-		$data = array(
-			'namamodule' 	=> "shop_detail_penjual",
-			'namafileview' 	=> "V_shop_detail_penjual",
-			'join_spec'		=> $this->m_shop_detail_penjual->join_spec(),
-		);
-		echo Modules::run('template/tampilCore4', $data);
-
 	}
+
+
 	function komentar()
 	{
 		$this->m_shop_detail_penjual->komentar();
