@@ -19,7 +19,7 @@ class kontak_pembeli extends MX_Controller {
 			'namafileview' 	=> "V_kontak_pembeli",
 			'tampil'		=> $this->m_kontak_pembeli->tampil(),
 		);
-		echo Modules::run('template/tampilCore4', $data);
+		echo Modules::run('template/tampilCore5', $data);
 	}
 
 		function tambah(){

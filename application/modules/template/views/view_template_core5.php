@@ -87,11 +87,9 @@ $rows = $this->db->query("SELECT * FROM user where email='".$this->session->emai
                             About Us
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="<?php echo base_url('tentang_dospi_pembeli'); ?>">Tentang Dospi</a>
                             <a class="dropdown-item" href="<?php echo base_url('kontak_pembeli'); ?>">Kontak Kami</a>
                             <a class="dropdown-item" href="<?php echo base_url('tata_cara_pembeli'); ?>">Tata Cara Jual & Beli</a>
                             <a class="dropdown-item" href="<?php echo base_url('faq_pembeli'); ?>">Faq</a>
-                            <a class="dropdown-item" href="404-2pembeli.html">Error</a>
                         </ul>
                     </li>
                     <li >
@@ -110,7 +108,7 @@ $rows = $this->db->query("SELECT * FROM user where email='".$this->session->emai
                                     <?php echo $rows['username'] ?>
                                 </a>
                                 <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="<?php echo base_url('pemesanan_penjual'); ?>">Dashboard</a>
+                                    <a class="dropdown-item" href="<?php echo base_url('pemesanan_pembeli'); ?>">Dashboard</a>
                                     <a class="dropdown-item" href="<?php echo base_url('edit_profil_pembeli'); ?>">Setting</a>
                                     <a class="dropdown-item" href="<?php echo base_url('halaman_index'); ?>" data-toggle="modal" data-target="#keluar">Keluar</a>
                                 </div>

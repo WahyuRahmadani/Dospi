@@ -24,7 +24,7 @@ class Tata_cara_pembeli extends MX_Controller {
 			'namafileview' 	=> "V_tata_cara_pembeli",
 			'tampil'		=> $this->m_tata_cara_pembeli->tampil(),
 		);
-		echo Modules::run('template/tampilCore4', $data);
+		echo Modules::run('template/tampilCore5', $data);
     }
     function tata_cara_penjual(){
         $this->m_tata_cara_pembeli->tata_cara_pembeli();

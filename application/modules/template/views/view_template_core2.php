@@ -68,7 +68,7 @@ $rows = $this->db->query("SELECT * FROM user where email='".$this->session->emai
 <header class="main-header header-2 fixed-header">
     <div class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand logo pad-0" href="index-3penjual.html">
+            <a class="navbar-brand logo pad-0" href="<?php echo base_url('halaman_penjual'); ?>">
                 <img src="assets/img/avatar/sapi.png" alt="logo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -77,40 +77,40 @@ $rows = $this->db->query("SELECT * FROM user where email='".$this->session->emai
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto d-lg-none d-xl-none">
                     <li class="nav-item dropdown">
-                        <a href="dashboard Penjual.html" class="nav-link">Dashboard</a>
+                        <a href="<?php echo base_url('dashboard_penjual'); ?>" class="nav-link">Dashboard</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a href="messages.html" class="nav-link">Pesan</a>
+                        <a href="<?php echo base_url('pesan_penjual'); ?>" class="nav-link">Pesan</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a href="bookings.html" class="nav-link">Pemesanan</a>
+                        <a href="<?php echo base_url('Pemesanan_penjual'); ?>" class="nav-link">Pemesanan</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a href="Faktur-Pembelian.html" class="nav-link">Pembelian</a>
+                        <a href="<?php echo base_url('pembelian'); ?>" class="nav-link">Pembelian</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a href="my-properties.html" class="nav-link">Product Saya</a>
+                        <a href="<?php echo base_url('product_saya'); ?>" class="nav-link">Product Saya</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a href="my-invoices.html" class="nav-link">Faktur Saya</a>
+                        <a href="<?php echo base_url('faktur_penjual'); ?>" class="nav-link">Faktur Saya</a>
                     </li>
                     <li class="nav-item dropdown active">
-                        <a href="submit-property.html" class="nav-link">Jual Ternakmu Disini!</a>
+                        <a href="<?php echo base_url('tambah_hewan'); ?>" class="nav-link">Jual Ternakmu Disini!</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a href="my-profile-userpenjual.html" class="nav-link">Profil Saya</a>
+                        <a href="<?php echo base_url('profil_saya'); ?>" class="nav-link">Profil Saya</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a href="my-profile.html" class="nav-link">Setting</a>
+                        <a href="<?php echo base_url('edit_profil'); ?>" class="nav-link">Setting</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a href="SyaratKetentuanDashboard2.html" class="nav-link">Syarat & ketentuan</a>
+                        <a href="<?php echo base_url('syarat_ketentuan_penjual'); ?>" class="nav-link">Syarat & ketentuan</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a href="faqdashboard1.html" class="nav-link">Faq</a>
+                        <a href="<?php echo base_url('faq_penjual'); ?>" class="nav-link">Faq</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a href="index-3.html" class="nav-link">Keluar</a>
+                        <a href="<?php echo base_url('halaman_index'); ?>" class="nav-link">Keluar</a>
                     </li>
                 </ul>
                 <div class="navbar-buttons ml-auto d-none d-xl-block d-lg-block">
@@ -122,20 +122,20 @@ $rows = $this->db->query("SELECT * FROM user where email='".$this->session->emai
                                     <?php echo $rows['username'] ?>
                                 </a>
                                 <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="messages.html">Pesan</a>
-                                    <a class="dropdown-item" href="bookings.html">Pemesanan</a>
-                                    <a class="dropdown-item" href="Faktur-Pembelian.html">Pembelian</a>
-                                    <a class="dropdown-item" href="my-profile-userpenjual.html">Profil Saya</a>
-                                    <a class="dropdown-item" href="my-profile.html">Setting</a>
-                                    <a class="dropdown-item" href="SyaratKetentuanDashboard2.html">Syarat & ketentuan</a>
-                                    <a class="dropdown-item" href="faqdashboard1.html">Faq</a>
-                                    <a class="dropdown-item" href="index-3.html" data-toggle="modal" data-target="#keluar">Keluar</a>
+                                    <a class="dropdown-item" href="<?php echo base_url('pesan_penjual'); ?>">Pesan</a>
+                                    <a class="dropdown-item" href="<?php echo base_url('pemesanan_penjual'); ?>">Pemesanan</a>
+                                    <a class="dropdown-item" href="<?php echo base_url('kontak_penjual'); ?>">Pembelian</a>
+                                    <a class="dropdown-item" href="<?php echo base_url('profil_saya'); ?>">Profil Saya</a>
+                                    <a class="dropdown-item" href="<?php echo base_url('edit_profil'); ?>">Setting</a>
+                                    <a class="dropdown-item" href="<?php echo base_url('syarat_ketentuan_penjual'); ?>">Syarat & ketentuan</a>
+                                    <a class="dropdown-item" href="<?php echo base_url('faq_penjual'); ?>">Faq</a>
+                                    <a class="dropdown-item" href="<?php echo base_url('halaman_index'); ?>" data-toggle="modal" data-target="#keluar">Keluar</a>
                                 </div>
                             </div>
                         </li>
                         <div class="navbar-nav ml-auto">
                             <li class="nav-item" style="margin-top: -5%;">
-                                <a href="submit-property.html" class="nav-link link-color"><i class="flaticon-plus"></i>Jual Ternakmu Disini !</a>
+                                <a href="<?php echo base_url('tambah_hewan'); ?>" class="nav-link link-color"><i class="flaticon-plus"></i>Jual Ternakmu Disini !</a>
                             </li>
                         </div> 
                     </ul>
@@ -155,25 +155,25 @@ $rows = $this->db->query("SELECT * FROM user where email='".$this->session->emai
                     <div class="dashboard-inner">
                         <h4>UTAMA</h4>
                         <ul>
-                            <li><a href="dashboard Penjual.html"><i class="flaticon-dashboard Penjual"></i> Dashboard</a></li>
-                            <li><a href="messages.html"><i class="flaticon-mail"></i> Pesan <span class="nav-tag">5</span></a></li>
-                            <li><a href="bookings.html"><i class="flaticon-calendar"></i> Pemesanan</a></li>
-                            <li><a href="Faktur-Pembelian.html"><i class="fa fa-money"></i> Pembelian</a></li>
-                            <li><a href="Riwayat Pembayaran1.html"><i class="fa fa-history"></i> Riwayat Pembayaran</a></li>
+                            <li><a href="<?php echo base_url('dashboard_penjual'); ?>"><i class="flaticon-dashboard Penjual"></i> Dashboard</a></li>
+                            <li><a href="<?php echo base_url('pesan_penjual'); ?>"><i class="flaticon-mail"></i> Pesan <span class="nav-tag">5</span></a></li>
+                            <li><a href="<?php echo base_url('pemesanan_penjual'); ?>"><i class="flaticon-calendar"></i> Pemesanan</a></li>
+                            <li><a href="<?php echo base_url('pembelian'); ?>"><i class="fa fa-money"></i> Pembelian</a></li>
+                            <li><a href="<?php echo base_url('riwayat_pembayaran_penjual'); ?>"><i class="fa fa-history"></i> Riwayat Pembayaran</a></li>
                         </ul>
                         <h4>DAFTAR</h4>
                         <ul>
-                            <li><a href="my-properties.html"><i class="flaticon-apartment"></i>Product Saya</a></li>
-                            <li><a href="my-invoices.html"><i class="flaticon-bill"></i>Faktur Saya</a></li>
-                            <li class="active"><a href="submit-property.html"><i class="flaticon-plus"></i>Jual Ternakmu Disini!</a></li>
+                            <li><a href="<?php echo base_url('product_saya'); ?>"><i class="flaticon-apartment"></i>Product Saya</a></li>
+                            <li><a href="<?php echo base_url('faktur_penjual'); ?>"><i class="flaticon-bill"></i>Faktur Saya</a></li>
+                            <li class="active"><a href="<?php echo base_url('tambah_hewan'); ?>"><i class="flaticon-plus"></i>Jual Ternakmu Disini!</a></li>
                         </ul>
                         <h4>AKUN</h4>
                         <ul>
-                            <li><a href="my-profile-userpenjual.html"><i class="fa fa-user"></i>Profil Saya</a></li>
-                            <li><a href="my-profile.html"><i class="fa fa-gear"></i>Setting</a></li>
-                            <li><a href="SyaratKetentuanDashboard2.html"><i class="flaticon-bill"></i>Syarat & ketentuan</a></li>
-                            <li><a href="faqdashboard1.html"><i class="fa fa-question-circle-o"></i>Faq</a></li>
-                            <li><a href="index-3.html"><i class="flaticon-logout"></i>Keluar</a></li>
+                            <li><a href="<?php echo base_url('profil_saya'); ?>"><i class="fa fa-user"></i>Profil Saya</a></li>
+                            <li><a href="<?php echo base_url('edit_profil'); ?>"><i class="fa fa-gear"></i>Setting</a></li>
+                            <li><a href="<?php echo base_url('syarat_ketentuan_penjual'); ?>"><i class="flaticon-bill"></i>Syarat & ketentuan</a></li>
+                            <li><a href="<?php echo base_url('faq_penjual'); ?>"><i class="fa fa-question-circle-o"></i>Faq</a></li>
+                            <li><a href="<?php echo base_url('halaman_index'); ?>"><i class="flaticon-logout"></i>Keluar</a></li>
                         </ul>
                     </div>
                 </div>
