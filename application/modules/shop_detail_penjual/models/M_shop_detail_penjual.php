@@ -15,13 +15,13 @@ class M_shop_detail_penjual extends CI_Model {
 
 						// Join spesifikasi hewan
 
-		$this->db->select('*')
-				 ->from('data_hewan')
-				 ->join('jenis_hewan', 'jenis_hewan.id_jenis = data_hewan.id_jenis')
-				 ->join('tb_makanan','tb_makanan.id_makanan = data_hewan.id_makanan')
-				 ->join('gambar_hewan', 'gambar_hewan.id_gambar = data_hewan.id_gambar');
-		$query = $this->db->get();
-		return $query->result();
+		// $this->db->select('*')
+		// 		 ->from('data_hewan')
+		// 		 ->join('jenis_hewan', 'jenis_hewan.id_jenis = data_hewan.id_jenis')
+		// 		 ->join('tb_makanan','tb_makanan.id_makanan = data_hewan.id_makanan')
+		// 		 ->join('gambar_hewan', 'gambar_hewan.id_gambar = data_hewan.id_gambar');
+		// $query = $this->db->get();
+		// return $query->result();
 
 
 	}
