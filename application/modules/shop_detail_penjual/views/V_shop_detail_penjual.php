@@ -22,46 +22,46 @@
                         <!-- main slider carousel items -->
                         <div class="carousel-inner">
                             <div class="active item carousel-item" data-slide-number="0">
-                                <img src="assets/img/properties/properties-1.jpg" class="img-fluid" alt="slider-properties">
+                                <img src="<?php echo base_url(); ?>assets/img/properties/properties-1.jpg" class="img-fluid" alt="slider-properties">
                             </div>
                             <div class="item carousel-item" data-slide-number="1">
-                                <img src="assets/img/properties/small-properties-1.jpg" class="img-fluid" alt="slider-properties">
+                                <img src="<?php echo base_url(); ?>assets/img/properties/small-properties-1.jpg" class="img-fluid" alt="slider-properties">
                             </div>
                             <div class="item carousel-item" data-slide-number="2">
-                                <img src="assets/img/properties/Sapi Limusin Coklat.jpg" class="img-fluid" alt="slider-properties">
+                                <img src="<?php echo base_url(); ?>assets/img/properties/Sapi Limusin Coklat.jpg" class="img-fluid" alt="slider-properties">
                             </div>
                             <div class="item carousel-item" data-slide-number="4">
-                                <img src="assets/img/properties/properties-4.jpg" class="img-fluid" alt="slider-properties">
+                                <img src="<?php echo base_url(); ?>assets/img/properties/properties-4.jpg" class="img-fluid" alt="slider-properties">
                             </div>
                             <div class="item carousel-item" data-slide-number="5">
-                                <img src="assets/img/properties/properties-5.jpg" class="img-fluid" alt="slider-properties">
+                                <img src="<?php echo base_url(); ?>assets/img/properties/properties-5.jpg" class="img-fluid" alt="slider-properties">
                             </div>
                         </div>
                         <!-- main slider carousel nav controls -->
                         <ul class="carousel-indicators smail-properties list-inline nav nav-justified">
                             <li class="list-inline-item active">
                                 <a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#propertiesDetailsSlider">
-                                    <img src="assets/img/properties/properties-1.jpg" class="img-fluid" alt="properties-small">
+                                    <img src="<?php echo base_url(); ?>assets/img/properties/properties-1.jpg" class="img-fluid" alt="properties-small">
                                 </a>
                             </li>
                             <li class="list-inline-item">
                                 <a id="carousel-selector-1" data-slide-to="1" data-target="#propertiesDetailsSlider">
-                                    <img src="assets/img/properties/small-properties-1.jpg" class="img-fluid" alt="properties-small">
+                                    <img src="<?php echo base_url(); ?>assets/img/properties/small-properties-1.jpg" class="img-fluid" alt="properties-small">
                                 </a>
                             </li>
                             <li class="list-inline-item">
                                 <a id="carousel-selector-2" data-slide-to="2" data-target="#propertiesDetailsSlider">
-                                    <img src="assets/img/properties/Sapi Limusin Coklat.jpg" class="img-fluid" alt="properties-small">
+                                    <img src="<?php echo base_url(); ?>assets/img/properties/Sapi Limusin Coklat.jpg" class="img-fluid" alt="properties-small">
                                 </a>
                             </li>
                             <li class="list-inline-item">
                                 <a id="carousel-selector-3" data-slide-to="3" data-target="#propertiesDetailsSlider">
-                                    <img src="assets/img/properties/properties-4.jpg" class="img-fluid" alt="properties-small">
+                                    <img src="<?php echo base_url(); ?>assets/img/properties/properties-4.jpg" class="img-fluid" alt="properties-small">
                                 </a>
                             </li>
                             <li class="list-inline-item">
                                 <a id="carousel-selector-4" data-slide-to="4" data-target="#propertiesDetailsSlider">
-                                    <img src="assets/img/properties/properties-5.jpg" class="img-fluid" alt="properties-small">
+                                    <img src="<?php echo base_url(); ?>assets/img/properties/properties-5.jpg" class="img-fluid" alt="properties-small">
                                 </a>
                             </li>
                         </ul>
@@ -129,7 +129,7 @@
                             <div class="comment">
                                 <div class="comment-author">
                                     <a href="#">
-                                        <img src="assets/img/avatar/avatar-3.jpg" alt="comments-user">
+                                        <img src="<?php echo base_url() ?>assets/img/avatar/avatar-3.jpg" alt="comments-user">
                                     </a>
                                 </div>
                                 <?php foreach($tampil as $shopdetailpenjual) {
@@ -227,6 +227,7 @@
                     <!-- Start Foreach -->
 
                     <?php foreach($tampil as $shopdetail) {
+
                     ?>
 
                     <!-- Recent properties start -->
@@ -235,7 +236,7 @@
                         <center><h4 class="title"><?php echo $shopdetail->nama_pemilik ?></h4></center><br>
                         <div class="location" style="margin-top: 3%;">
                             <!-- <a href="properties-details.html"> -->
-                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="flaticon-pin"></i>Rt 03 Rw 07 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sidomulyo,Jambewangi,Sempu,Kabupaten &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Banyuwangi (68468)
+                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="flaticon-pin"></i>Rt 03 Rw 07 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sidomulyo,Jambewangi,Sempu,Kabupaten  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Banyuwangi (68468)
                           <!--   </a> -->
                         </div><br>
                         <ul class="facilities-list clearfix">
@@ -313,7 +314,7 @@
                             </a>
                             <div class="media-body align-self-center">
                                 <h5>
-                                    <a href="properties-grid-leftsidepenjual.html">Sapi Brahman</a>
+                                    <a href="properties-grid-leftsidepenjual.html">Sapi Brahman </a>
                                 </h5>
                                 <div class="listing-post-meta">
                                     <a href="properties-grid-leftsidepenjual.html"><i class="fa fa-calendar"></i> Oct 27, 2018 </a> | Rp. 47.000.000

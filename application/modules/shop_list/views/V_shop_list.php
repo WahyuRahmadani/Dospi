@@ -100,7 +100,7 @@
                             </div>
                             <div class="detail">
                                 <h1 class="title">
-                                    <a href="<?php echo base_url('shop_detail_penjual') ?>"><?php echo $shoplist->jenis_hewan; ?></a>
+                                    <a href="<?php echo base_url('shop_detail_penjual/detail/').$shoplist->id_datahewan ?>"><?php echo $shoplist->jenis_hewan; ?></a>
                                 </h1>
                                 <div class="location">
                                     <a href="properties-detailspenjual.html">

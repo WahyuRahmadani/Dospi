@@ -25,6 +25,16 @@ class Shop_detail_penjual extends MX_Controller {
 
 	}
 
+	function detail($id_datahewan){
+		
+		$data = array(
+			'namamodule' 	=> "shop_detail_penjual",
+			'namafileview' 	=> "V_shop_detail_penjual",
+			'tampil'		=> $this->m_shop_detail_penjual->detail_hewan($id_datahewan),
+		);
+		echo Modules::run('template/tampilCore4', $data);
+	}
+
 
 	function komentar()
 	{
