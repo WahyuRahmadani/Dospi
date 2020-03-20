@@ -221,6 +221,35 @@ $rows = $this->db->query("SELECT * FROM user where email='".$this->session->emai
     </div>
 </footer>
 <!-- Footer end -->
+
+
+
+           <!-- The Modal hapus -->
+                  <div class="modal fade" id="keluar" style="top: 15%;">
+                    <div class="modal-dialog modal-md">
+                      <div class="modal-content">
+                      
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                          <center><h6>Apakah Anda yakin Untuk Keluar</h6></center>
+                        </div>
+                        
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                          <a href="<?php echo base_url('halalaman_pembeli'); ?>" class="btn btn-danger" data-dismiss="modal">Tidak</a>          
+                          <a href="<?php echo base_url('halaman_index'); ?>" class="btn btn-success">Iya</a>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                 <!-- the end modal hapus -->
                       
 
 <!-- Full Page Search -->

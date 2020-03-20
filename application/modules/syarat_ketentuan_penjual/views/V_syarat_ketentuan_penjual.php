@@ -16,32 +16,35 @@
                                         <div class="row">
                                             <div class="col-lg-12" style="margin-top: -7%;">
                                                 <div class="col-md-12 sd">
-                                                    <p>Cara pembelian/ order barang di DOSPI  adalah sebagai berikut :</p>
-                                                    <p>1.  Lakukan login/registrasi sebagai pembeli
-                                                    <br>2. Masuk ke bagian Shop
-                                                    <br>3. Cari hewan yang ingin di beli
-                                                    <br>4. Klik gambar yang tampil dan klik DETAIL
-                                                    <br>5. Lalu klik beli sekarang
-                                                    <br>6. Lalu pembeli akan diarahkan ke bagian Checkout
-                                                    <br>7. Untuk selanjutnya pembeli bisa mengklik Pesan untuk melanjutkan pesanan dan Klik cancel jika ingin membatalkan pembelian
-                                                    <br>8. Ketika pembeli mengklik pesan maka pembeli akan diarahkan ke halaman pemesanan
-                                                    <br>9. Dihalaman pemesanan klik deal untuk melanjutkan pemesanan dan klik cancel untuk mengancel hewan semisal tidak jadi membeli
-                                                    <br>10. Dan Selanjutnya Pembeli diharuskan mengirimkan Dp kenomor rekening yang telah dikirimkan oleh website dospi ke email/no telfon pembeli. Dengan Jumlah yang tertera di Syarat dan ketentuan pembayaran di website Dospi.
-                                                    <br>11. Lalu selanjutnya kehalaman Faktur, Klik detail untuk melihat detail hewan yang telah dibeli dan Klik selesai untuk mengakhiri pembelian.
+                                                    <p>Cara penjualan hewan ternak di DOSPI:</p>
+                                                    <p>1. Lakukan login/registrasi sebagai penjual.
+                                                    <br>2. Masuk ke menu jual ternakmu disini.
+                                                    <br>3. Pilih gambar hewan yang akan dijual dan menuliskan deskripsi hewan yang terdiri dari :
+                                                </p>
+                                                <p>-Harga,
+                                                   <br>-Nama/jenis hewan,
+                                                   <br>-Jenis kelamin hewan,
+                                                   <br>-Panjang lebar dan tinggi hewan,
+                                                   <br>-Berat hewan,
+                                                   <br>-Jenis makanan yang dimakan hewan (combor/tidak),
+                                                   <br>-Warna hewan,
+                                                   <br>-Menyertakan 5 foto sapi/kambing yang akan di jual (2 Foto Depan Belakang Sapi/Kambing, 2 Foto Samping Kanan Samping Kiri Sapi/Kambing, 1 Foto Makanan Ternak Yang Biasa Hewan Itu Makan).
+                                                </p>
+                                                <p>4. Menyertakan alamat lengkap tentang keberadaan sapi/kambing ( Disediakan maps ).
+                                                <br>5. Setelah data hewan sudah terisi klik jual ternakmu disini, dan anda bisa melihat Daftar Hewan yang anda jual  di halaman Produk saya dan anda juga bisa melihat hewan anda di shop Dospi.
+                                                </p>
 
-                                                    </p>
-                                                    
-                                                        <p>Semisal pembeli menyatakan deal akan hewan yang akan dibeli, kita sebagai admin akan mengirim DP awal yang telah di transfer di rekening DOSPI kepada si penjual. Semisal pembeli tidak cocok dengan hewan yang akan dibeli pembeli mempunyai hak untuk mengencel pembelian tersebut Dan Admin akan mengembalikan Uang Dp yang pernah dikirim oleh pembeli ke rekening Dospi</p>
-                                                        <br>
-                                                        <br>
-                                                        <h5 class="heading">Syarat Dan Ketentuan Pembelian Di Dospi</h5>    
-                                                        <br>Adapun syarat dan ketentuan terkait dengan pembeliannya adalah sebagai berikut : style</br>
-                                                        <br>1. Apabila harga sapi lebih dari 25 juta pembeli harus mengirimkan 27%  Dari total harga sebagai Dp 
-                                                        <br>2. Apabila harga sapi dibawah 25 Juta pembeli harus mengirimkan 21%  dari total harga sebagai Dp 
-                                                        <br>3. Apabila harga kambing diatas 5 juta maka pembeli harus mengirim dp 16% dari total harga sebagai Dp
-                                                        <br>4. Apabila harga kambing dibawah 5 juta maka pembeli harus mengirim dp 10.5% dari total harga sebagai Dp
-                                                        <br>5. Untuk pengiriman hewan tersebut menjadi kewajiban dari pembeli</br>
-                                                        </p>
+                                            
+                                                <br>
+                                                <br>
+                                                <h5 class="heading">Syarat Dan Ketentuan Pembelian Di Dospi</h5>    
+                                                <br>Adapun syarat dan ketentuan terkait dengan pembeliannya adalah sebagai berikut :</br>
+                                                <br>1. Apabila harga sapi lebih dari 25 juta pembeli harus mengirimkan 27%  Dari total harga sebagai Dp 
+                                                <br>2. Apabila harga sapi dibawah 25 Juta pembeli harus mengirimkan 21%  dari total harga sebagai Dp 
+                                                <br>3. Apabila harga kambing diatas 5 juta maka pembeli harus mengirim dp 16% dari total harga sebagai Dp
+                                                <br>4. Apabila harga kambing dibawah 5 juta maka pembeli harus mengirim dp 10.5% dari total harga sebagai Dp
+                                                <br>5. Untuk pengiriman hewan tersebut menjadi kewajiban dari pembeli</br>
+                                                </p>
                                             </div>
                                         </div>
                                     </div>

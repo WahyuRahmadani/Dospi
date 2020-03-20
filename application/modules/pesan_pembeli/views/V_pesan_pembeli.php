@@ -88,3 +88,65 @@
 </div>
 
 <!-- Dashboard end -->
+
+
+
+
+<!-- The Modal balas -->
+  <div class="modal fade" id="jajal" style="top: 15%;">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Balas</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="form-group">
+      <label for="comment">Comment:</label>
+      <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+    </div>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-dismiss="modal">Kirim</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+ <!-- the end modal balas -->
+
+
+
+
+ <!-- The Modal hapus -->
+  <div class="modal fade" id="hapus" style="top: 15%;">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <center><h6>Apakah Anda yakin Untuk Menghapus Pesan ini ???</h6></center>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Hapus</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+ <!-- the end modal hapus -->
