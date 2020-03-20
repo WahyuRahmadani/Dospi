@@ -1,4 +1,13 @@
- <div class="col-lg-9 col-md-12 col-sm-12 col-pad">
+            <!-- date range script -->
+            <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+            <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+            <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+            <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+
+
+            
+            <div class="col-lg-9 col-md-12 col-sm-12 col-pad">
                 <div class="content-area5 dashboard-content">
                     <div class="dashboard-header clearfix">
                         <div class="row">
@@ -77,12 +86,12 @@
                                                 <li>Nomor Telepon/wa : <span> <a href="tel:+79617036705">+79617036705</a></span></li>
                                             </ul>
                                             <div class="konfirmbayar">
-                                               <a class="btn btn-success" style="color: #ffffff;" href="konfirmasi-bayar.html">Konfirmasi Pembayaran</a>
+                                               <a class="btn btn-success" style="color: #ffffff;" href="<?php echo base_url('konfirmasi_pembayaran'); ?>">Konfirmasi Pembayaran</a>
                                             </div>
 
 
                                             <div class="row row-2">
-                                                <div class="col-lg-6 col-md-12" style="margin-left: 47%; margin-top: -30%;">
+                                                <div class="col-lg-6 col-md-12" style="margin-left: 44%; margin-top: -30%;">
                                                     <div class="row">
                                                         <div class="col-md-6 col-lg-12 col-pad">
                                                             <div class="category">
@@ -102,8 +111,8 @@
                                             </div>
 
                                             <div class="panel-body demo-nifty-btn" style="margin-left: 80%;">
-                                                <a class="btn btn-danger" style="border-radius: 15%" style="color: #fff; font-size:80%;" href="bookings2.html" data-toggle="modal" data-target="#cancel">Cancel</a>
-                                                <a class="btn btn-success" style="border-radius: 15%;" style="color: #fff; font-size:80%;" href="my-invoices2.html">Deal</a>
+                                                <button class="btn btn-danger" style="border-radius: 15%;"><a style="color: #fff; font-size:80%;" href="<?php echo base_url('pemesanan_pembeli'); ?>" data-toggle="modal" data-target="#cancel">Cancel</a></button>
+                                                <button class="btn btn-success" style="border-radius: 15%;"><a style="color: #fff; font-size:80%;" href="<?php echo base_url('faktur_pembeli'); ?>">Deal</a></button>
                                             </div>
                                         </div>
                                     </div>
@@ -132,11 +141,11 @@
                                             </ul>
 
                                             <div class="konfirmbayar">
-                                                <a class="btn btn-success" style="color: #ffffff;" href="konfirmasi-bayar.html">Konfirmasi Pembayaran</a>
+                                                <a class="btn btn-success" style="color: #ffffff;" href="<?php echo base_url('konfirmasi_pembayaran'); ?>">Konfirmasi Pembayaran</a>
                                             </div>
 
                                             <div class="row row-2">
-                                                <div class="col-lg-6 col-md-12" style="margin-left: 47%; margin-top: -30%;">
+                                                <div class="col-lg-6 col-md-12" style="margin-left: 44%; margin-top: -30%;">
                                                     <div class="row">
                                                         <div class="col-md-6 col-lg-12 col-pad">
                                                             <div class="category">
@@ -156,8 +165,8 @@
                                             </div>
 
                                             <div class="panel-body demo-nifty-btn" style="margin-left: 80%;">
-                                                <a class="btn btn-danger" style="border-radius: 15%" style="color: #fff; font-size:80%;" href="bookings2.html" data-toggle="modal" data-target="#cancel">Cancel</a>
-                                                <a class="btn btn-success" style="border-radius: 15%;" style="color: #fff; font-size:80%;" href="my-invoices2.html">Deal</a>
+                                                <button class="btn btn-danger" style="border-radius: 15%;"><a style="color: #fff; font-size:80%;" href="<?php echo base_url('pemesanan_pembeli'); ?>" data-toggle="modal" data-target="#cancel">Cancel</a></button>
+                                                <button class="btn btn-success" style="border-radius: 15%;"><a style="color: #fff; font-size:80%;" href="<?php echo base_url('faktur_pembeli'); ?>">Deal</a></button>
                                             </div>
                                         </div>
                                     </div>
@@ -218,8 +227,8 @@
                         
                         <!-- Modal footer -->
                         <div class="modal-footer">
-                          <a href="bookings2.html" class="btn btn-danger" data-dismiss="modal">Tidak</a>          
-                          <a href="bookings2.html" class="btn btn-success">Iya</a>
+                          <a href="<?php echo base_url('pemesanan_pembeli'); ?>" class="btn btn-danger" data-dismiss="modal">Tidak</a>          
+                          <a href="<?php echo base_url('halaman_pembeli'); ?>" class="btn btn-success">Iya</a>
                         </div>
                         
                       </div>
@@ -227,5 +236,3 @@
                   </div>
 
                  <!-- the end modal cancel -->
-
-

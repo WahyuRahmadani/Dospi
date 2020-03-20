@@ -49,7 +49,7 @@ class Login_pembeli extends MX_Controller {
 				
 				
 			}else{
-					redirect('login_pembeli');
+					echo"<script>alert('Password Anda Salah');window.location='login_pembeli';</script>";
 			}
 		}
 

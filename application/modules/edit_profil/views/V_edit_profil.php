@@ -10,8 +10,8 @@
                                 </div>
                             </div>
                         </div>
-                        <?php foreach ($tampil as $key) {
-                            $id = $key->id_user;
+                        <?php 
+                        $key = $this->db->query("SELECT * FROM user where email='".$this->session->email."'")->row_array();
                          ?>
                         <div class="dashboard-list">
                             <h3 class="heading">Profil Lengkap</h3>
@@ -30,13 +30,13 @@
                                                     <div class="col-lg-6 col-md-6">
                                                         <div class="form-group name">
                                                             <label>Username</label>
-                                                            <input type="text" name="name" class="form-control" style="color: black;" value="<?php echo $key->username; ?>">
+                                                            <input type="text" name="name" class="form-control" style="color: black;" value="<?php echo $key['username']; ?>">
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-6 col-md-6">
                                                         <div class="form-group subject">
                                                             <label>Telepon</label>
-                                                            <input type="text" name="telepon" class="form-control" style="color: black;" value="<?php echo $key->no_tlp; ?>">
+                                                            <input type="text" name="telepon" class="form-control" style="color: black;" value="<?php echo $key['no_tlp']; ?>">
                                                         </div>
                                                     </div>
                                                 </div>
