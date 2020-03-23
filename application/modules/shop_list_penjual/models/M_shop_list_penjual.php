@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class M_shop_list extends CI_Model {
+class M_shop_list_penjual extends CI_Model {
 
 	function tampil()
 	{
