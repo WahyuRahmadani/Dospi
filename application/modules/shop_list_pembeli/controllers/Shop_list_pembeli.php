@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class shop_list_pembeli extends MX_Controller {
+class Shop_list_pembeli extends MX_Controller {
 
 	function __construct()
 	{

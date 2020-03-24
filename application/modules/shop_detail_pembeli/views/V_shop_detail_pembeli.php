@@ -125,9 +125,12 @@
                             <div class="comment">
                                 <div class="comment-author">
                                     <a href="#">
-                                        <img src="assets/img/avatar/avatar-1.jpg" alt="comments-user">
+                                        <img src="<?php echo base_url() ?>assets/img/avatar/avatar-1.jpg" alt="comments-user">
                                     </a>
                                 </div>
+                                <?php foreach($tampil as $shopdetailpembeli) {
+                                    $id = $shopdetailpembeli->id_komentar;
+                                ?>
                                 <div class="comment-content">
                                     <div class="comment-meta">
                                         <h6>
@@ -137,82 +140,46 @@
                                             <a data-toggle="modal" data-target="#hapus" style="color: red;">Hapus</a></span>
                                         </h6>
                                     </div>
-                                    <p>Ndang tuku Ojo gor ndelak ndelok tok.</p>
+                                    <p><?php echo $shopdetailpembeli->isi_komentar ?></p>
                                 </div>
+                                <!-- The Modal hapus -->
+                    <div class="modal fade" id="hapus" style="top: 15%;">
+                        <div class="modal-dialog modal-md">
+                            <div class="modal-content">
+                      
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                  <center><h6>Apakah Anda yakin Untuk Menghapus Pesan ini ???</h6></center>
+                                </div>
+                                
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-danger" data-dismiss="modal">Hapus</button>
+                                </div>
+                        
                             </div>
-                            <ul>
-                                <li>
-                                    <div class="comment">
-                                        <div class="comment-author">
-                                            <a href="#">
-                                                <img src="assets/img/avatar/avatar-2.jpg" alt="comments-user">
-                                            </a>
-                                        </div>
-                                        <div class="comment-content">
-                                            <div class="comment-meta">
-                                                <h6>
-                                                    Zaenal Abidin
-                                                    <span class="float-right">11/28/2018
-                                            <a data-toggle="modal" data-target="#balas" style="color: blue;">Balasan</a>
-                                            <a data-toggle="modal" data-target="#hapus" style="color: red;">Hapus</a></span>
-                                                </h6>
-                                            </div>
-                                            <P>Mantul Mas brooo.</P>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <div class="comment">
-                                <div class="comment-author">
-                                    <a href="#">
-                                        <img src="assets/img/avatar/avatar-3.jpg" alt="comments-user">
-                                    </a>
-                                </div>
-                                <div class="comment-content">
-                                    <div class="comment-meta">
-                                        <h6>
-                                            Sendi Dwi Saputra
-                                            <span class="float-right">11/28/2018
-                                            <a data-toggle="modal" data-target="#balas" style="color: blue;">Balasan</a>
-                                            <a data-toggle="modal" data-target="#hapus" style="color: red;">Hapus</a></span>
-                                        </h6>
-                                    </div>
-                                    <P>Bisa Kirim Jauh Nggk Om.</P>
-                                </div>
+                        </div>
+                  </div>
+                  <?php } ?>
+
+                 <!-- the end modal hapus -->
+
+
                             </div>
-                            <ul>
-                                <li>
-                                    <div class="comment mb-50">
-                                        <div class="comment-author">
-                                            <a href="#">
-                                                <img src="assets/img/avatar/avatar-4.jpg" alt="comments-user">
-                                            </a>
-                                        </div>
-                                        <div class="comment-content b-none">
-                                            <div class="comment-meta">
-                                                <h6>
-                                                    Dicky Dharmawan
-                                                    <span class="float-right">11/28/2018
-                                            <a data-toggle="modal" data-target="#balas" style="color: blue;">Balasan</a>
-                                            <a data-toggle="modal" data-target="#hapus" style="color: red;">Hapus</a></span>
-                                                </h6>
-                                            </div>
-                                            <P>Cocok Tuh Buat Qurban.</P>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
                         </li>
                     </ul>
                     <!-- Contact 2 start -->
                     <div class="contact-2 ca mb-50">
                         <h3 class="heading">Ikut Berdiskusi...</h3>
-                        <form action="#" method="GET" enctype="multipart/form-data">
+                        <form action="<?php echo base_url().'shop_detail_pembeli/komentar'?>" method="post" enctype="multipart/form-data">
                             <div class="row">
                                 <div class="form-group message col-md-12">
-                                    <textarea class="form-control" name="message" placeholder="Tuliskan Pesanmu" style="color: #333;"></textarea>
+                                    <input class="form-control" name="isi_komentar" placeholder="Tuliskan Pesanmu" style="color: #333;"></textarea>
                                 </div>
                                 <div class="send-btn col-md-12">
                                     <button type="submit" class="btn btn-md button-theme">Kirim Pesan</button>
@@ -222,6 +189,38 @@
                     </div>
                 </div>
             </div>
+
+            <!-- The Modal balas -->
+                  <div class="modal fade" id="balas" style="top: 15%;">
+                        <div class="modal-dialog modal-md">
+                            <div class="modal-content">
+                            <form action="<?php echo base_url().'shop_detail_pembeli/balas'?>" method="post" enctype="multipart/form-data">
+                        <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Balas</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <div class="form-group">
+                                        <label for="comment">Comment:</label>
+                                        <input type="text" class="form-control" rows="5" id="comment" name="balas">
+                                    </div>
+                                </div>
+                                
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                  <button type="submit" class="btn btn-success" data-dismiss="modal">Kirim</button>
+                                </div>
+                        
+                            </div>
+                        </div>
+                  </div>
+
+                 <!-- the end modal balas -->
+
+
             <div class="col-lg-4 col-md-12">
                 <div class="sidebar-right">
 
@@ -421,60 +420,6 @@
 
 
 
-                                  <!-- The Modal balas -->
-                  <div class="modal fade" id="balas" style="top: 15%;">
-                        <div class="modal-dialog modal-md">
-                            <div class="modal-content">
-                      
-                        <!-- Modal Header -->
-                                <div class="modal-header">
-                                    <h4 class="modal-title">Balas</h4>
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                </div>
-                                
-                                <!-- Modal body -->
-                                <div class="modal-body">
-                                    <div class="form-group">
-                                        <label for="comment">Comment:</label>
-                                        <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
-                                    </div>
-                                </div>
-                                
-                                <!-- Modal footer -->
-                                <div class="modal-footer">
-                                  <button type="button" class="btn btn-success" data-dismiss="modal">Kirim</button>
-                                </div>
-                        
-                            </div>
-                        </div>
-                  </div>
+                                  
 
-                 <!-- the end modal balas -->
-
-                 <!-- The Modal hapus -->
-                  <div class="modal fade" id="hapus" style="top: 15%;">
-                        <div class="modal-dialog modal-md">
-                            <div class="modal-content">
-                      
-                                <!-- Modal Header -->
-                                <div class="modal-header">
-                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                </div>
-                                
-                                <!-- Modal body -->
-                                <div class="modal-body">
-                                  <center><h6>Apakah Anda yakin Untuk Menghapus Pesan ini ???</h6></center>
-                                </div>
-                                
-                                <!-- Modal footer -->
-                                <div class="modal-footer">
-                                  <button type="button" class="btn btn-danger" data-dismiss="modal">Hapus</button>
-                                </div>
-                        
-                            </div>
-                        </div>
-                  </div>
-
-                 <!-- the end modal hapus -->
-
-
+                 

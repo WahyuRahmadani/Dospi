@@ -8,10 +8,6 @@ class M_shop_detail_pembeli extends CI_Model {
 		$this->db->select('*');
 		$this->db->from('data_hewan');
 		$this->db->join('tb_komentar', 'data_hewan.id_datahewan = tb_komentar.id_datahewan');
-		$this->db->join('jenis_hewan', 'jenis_hewan.id_jenis = data_hewan.id_jenis');
-		$this->db->join('tb_makanan','tb_makanan.id_makanan = data_hewan.id_makanan');
-		$this->db->join('gambar_hewan', 'gambar_hewan.id_gambar = data_hewan.id_gambar');
-		$this->db->join('kategori_hewan','kategori_hewan.id_kategori= data_hewan.id_kategori');
 		$query = $this->db->get();
 
 		return $query->result();
