@@ -11,16 +11,10 @@
                             <h3 class="heading">Profile Saya</h3>
                             <div class="dashboard-message contact-2 bdr clearfix">
                                 <div class="row">
-                                    <div class="col-lg-3 col-md-3">
+                                    <div class="col-md-3">
                                         <!-- Edit profile photo -->
-                                        <div class="edit-profile-photo">
-                                            <img src="<?php echo base_url ()?>assets/img/user/<?php echo $key->foto_profil?>" alt="profile-photo" class="img-fluid">
-                                            <div class="change-photo-btn" style="bottom: -15%;">
-<!--                                                 <div class="photoUpload">
-                                                    <span><i class="fa fa-upload"></i>&nbsp;&nbsp;Ubah</span>
-                                                    <input type="file" class="upload">
-                                                </div> -->
-                                            </div>
+                                        <div class="form-group">
+                                            <img src="<?php echo base_url ()?>assets/img/user/<?php echo $key->foto_profil?>"  width='180px' height='180'>
                                         </div>
                                     </div>
                                     <div class="col-lg-9 col-md-9">
