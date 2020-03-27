@@ -22,20 +22,18 @@ class Pesan_penjual extends MX_Controller {
 		$data = array(
 			'namamodule' 	=> "pesan_penjual",
 			'namafileview' 	=> "V_pesan_penjual",
-			'tampil'		=> $this->m_pesan->tampil(),
+			'tampil'		=> $this->m_pesan_penjual->tampil(),
 		);
 		echo Modules::run('template/tampilCore2', $data);
 	}
 
-	function edit(){
-		$this->m_pesan_penjual->edit();
-		redirect('pesan_penjual');
+	function balasan(){
+		$this->m_pesan_penjual->pesan_penjual();
+		
 	}
 
-	function hapus($id)
-	{
-		$this->m_pesan_penjual->hapus($id);
-		redirect('pesan_penjual');
+	function hapus($id){
+		$this->m_pesan_penjual->hapus($id)
 	}
 
 }
