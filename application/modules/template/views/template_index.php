@@ -73,7 +73,7 @@
                         </a>
                     </li>
                     <li class="nav-item dropdown active">
-                        <a class="nav-link dropdown" href="properties-grid-leftside.html">
+                        <a class="nav-link dropdown" href="<?php echo base_url('shop_list_index'); ?>">
                             Shop
                         </a>
                     </li>

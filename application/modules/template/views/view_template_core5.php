@@ -78,7 +78,7 @@ $rows = $this->db->query("SELECT * FROM user where email='".$this->session->emai
                         </a>
                     </li>
                     <li class="nav-item dropdown active">
-                        <a class="nav-link dropdown" href="properties-grid-leftsidepembeli.html">
+                        <a class="nav-link dropdown" href="<?php echo base_url('shop_list_pembeli'); ?>">
                             Shop
                         </a>
                     </li>

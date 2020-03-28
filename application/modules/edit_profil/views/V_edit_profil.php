@@ -19,7 +19,7 @@
                                 <div class="row">
                                         <div class="col-lg-3 col-md-3">
                                             <div class="form-group" style="margin-top: -22%;"><br>
-                                                <form action="<?php echo base_url().'edit_profil/edit'; ?>" method="post" enctype="multipart/form-data">
+                                                <form action="<?php echo base_url().'edit_profil/edit'; ?>" method="post" enctype="multipart/form-data" >
                                                 <input type="hidden" name="id_user" value="<?php echo $key->id_user; ?>">
                                                 <label></label><br><br>
                                                 <input type="file" name="foto_profil"> 
