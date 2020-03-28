@@ -22,8 +22,23 @@ class Shop_list_penjual extends MX_Controller {
 			'tampil'		=> $this->M_shop_list_penjual->tampil(),
 		);
 		echo Modules::run('template/tampilCore4', $data);
-	}
+	
 
+		// PAGINATION LOAD LIBRARI
+
+	$this->load->library('pagination');
+
+	// CONFIG
+
+	$config['base_url']		= base_url().'http://localhost/Dospi/shop_list_penjual/index/';
+	$config['total_rows']	= $this->M_shop_list_penjual->jumlah_data();
+	$config['per_page']		= 10;
+	$from['start']			= $this->uri->segment(3);
+
+	$this->pagination->initialize($config);
+	$data['data_hewan']		= $this->M_shop_list_penjual->data($config['per_page'],$from['start']);
+	
+	}
 	
 	
 }

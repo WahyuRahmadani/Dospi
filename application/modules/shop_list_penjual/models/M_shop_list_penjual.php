@@ -18,6 +18,21 @@ class M_shop_list_penjual extends CI_Model {
 			// return $query;
 	}
 
+
+	function data($number,$offset){
+
+		return $query = $this->db->get('data_hewan',$number,$offset)->result();
+
+	}
+
+
+	function jumlah_data(){
+
+		return $this->db->get('data_hewan')->num_rows();
+	}
+
+
+
 	function hewan()
 	{
 		// Table Tambah Hewan

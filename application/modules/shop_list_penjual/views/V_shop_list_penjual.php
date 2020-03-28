@@ -87,7 +87,9 @@
 
 
                 <div class="row">
-                        <?php foreach($tampil as $shoplist) {
+                        <?php
+                            $no = $this->uri->segment(3)+1;
+                            foreach($tampil as $shoplist) {
                         ?>
                     <div class="col-lg-6 col-md-6 col-sm-12">
                         <div class="property-box">
@@ -131,8 +133,10 @@
                 </div>
 
 
+<?php echo $this->pagination->create_links(); ?>
+
                 <!-- Page navigation start -->
-                <div class="pagination-box text-center">
+<!--                 <div class="pagination-box text-center">
                     <nav aria-label="Page navigation example">
                         <ul class="pagination">
                             <li class="page-item">
@@ -147,6 +151,7 @@
                         </ul>
                     </nav>
                 </div>
+ -->                
             </div>
         </div>
     </div>
