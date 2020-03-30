@@ -26,5 +26,11 @@ class Tentang_dospi_penjual extends MX_Controller {
 		);
 		echo Modules::run('template/tampilCore4', $data);
 	}
+
+	function tentang()
+	{
+		$this->m_tentang_dospi_penjual->tentang();
+		// redirect('tentang');
+	}
 }
  
