@@ -6,7 +6,7 @@
         <div class="breadcrumb-areas">
             <h1>Shop</h1>
             <ul class="breadcrumbs">
-                <li><a href="index-3penjual.html">Home</a></li>
+                <li><a href="<?php echo base_url('halaman_penjual'); ?>">Home</a></li>
                 <li class="active">Shop</li>
             </ul>
         </div>
