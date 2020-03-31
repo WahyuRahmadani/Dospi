@@ -27,6 +27,12 @@ class tentang_dospi_index extends MX_Controller {
 		echo Modules::run('template/tampil_template_index', $data);
 	}
 
+	function tentang()
+	{
+		$this->m_tentang_dospi_index->tentang();
+		// redirect('tentang');
+	}
+
 	
 }
  

@@ -7,6 +7,9 @@
                 <li><a href="index-3.html">Home</a></li>
                 <li class="active">Tentang Dospi</li>
             </ul>
+            <?php foreach($tampil as $tentangdospiindex) {
+                $id = $tentangdospiindex->id_tentang;
+            ?>
         </div>
     </div>
 </div>
@@ -23,9 +26,9 @@
             </div>
             <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-xs-12">
                 <div class="about-text">
-                    <h3>Selamat Datang di Dospi</h3>
-                    <p>Dospi.Com Adalah Sebuah Website Yang Menerapkan Konsep Bisnis,dan
-                    Berjalan Di Bidang Penjualan Hewan,terutama Sapi Dan Kambing</p>
+                    <h3><?php echo $tentangdospiindex->judul ?></h3>
+                    <p><?php echo $tentangdospiindex->konten ?></p>
+                    <?php } ?>
                 </div>
             </div>
         </div>

@@ -26,5 +26,10 @@ class Tentang_dospi_pembeli extends MX_Controller {
 		);
 		echo Modules::run('template/tampilCore5', $data);
 	}
+	function tentang()
+	{
+		$this->m_tentang_dospi_pembeli->tentang();
+		// redirect('tentang');
+	}
 }
  
