@@ -4,7 +4,7 @@
         <div class="breadcrumb-areas">
             <h1>Shop</h1>
             <ul class="breadcrumbs">
-                <li><a href="index-3pembeli.html">Home</a></li>
+                <li><a href="<?php echo base_url('halaman_pembeli'); ?>">Home</a></li>
                 <li class="active">Shop</li>
             </ul>
         </div>
@@ -84,7 +84,7 @@
                     <div class="col-lg-6 col-md-6 col-sm-12">
                         <div class="property-box">
                             <div class="property-thumbnail">
-                                <a href="properties-detailspembeli.html" class="property-img">
+                                <a href="<?php echo base_url('shop_detail_pembeli'); ?>" class="property-img">
                                     <div class="tag">Beli Sekarang</div>
                                     <div class="price-box"><span>Rp 100.000.000 </div>
                                     <img class="d-block w-100" src="assets/img/properties/Sapi Limusin Coklat.jpg" alt="properties">
@@ -92,10 +92,10 @@
                             </div>
                             <div class="detail">
                                 <h1 class="title">
-                                    <a href="properties-detailspembeli.html">Sapi Limusin</a>
+                                    <a href="<?php echo base_url('shop_detail_pembeli'); ?>">Sapi Limusin</a>
                                 </h1>
                                 <div class="location">
-                                    <a href="properties-detailspembeli.html">
+                                    <a href="<?php echo base_url('shop_detail_pembeli'); ?>">
                                         <i class="flaticon-pin"></i>123 Kathal St. Tampa City,
                                     </a>
                                 </div>
@@ -122,7 +122,7 @@
                     <div class="col-lg-6 col-md-6 col-sm-12">
                         <div class="property-box">
                             <div class="property-thumbnail">
-                                <a href="properties-detailspembeli.html" class="property-img">
+                                <a href="<?php echo base_url('shop_detail_pembeli'); ?>" class="property-img">
                                     <div class="tag">Beli Sekarang</div>
                                     <div class="price-box"><span>Rp 5.000.000</div>
                                     <img class="d-block w-100" src="assets/img/properties/Kambing Etawa.jpg" alt="properties">
@@ -130,10 +130,10 @@
                             </div>
                             <div class="detail">
                                 <h1 class="title">
-                                    <a href="properties-detailspembeli.html">Kambing Etawa</a>
+                                    <a href="<?php echo base_url('shop_detail_pembeli'); ?>">Kambing Etawa</a>
                                 </h1>
                                 <div class="location">
-                                    <a href="properties-detailspembeli.html">
+                                    <a href="<?php echo base_url('shop_detail_pembeli'); ?>">
                                         <i class="flaticon-pin"></i>123 Kathal St. Tampa City,
                                     </a>
                                 </div>
@@ -160,7 +160,7 @@
                     <div class="col-lg-6 col-md-6 col-sm-12">
                         <div class="property-box">
                             <div class="property-thumbnail">
-                                <a href="properties-detailspembeli.html" class="property-img">
+                                <a href="<?php echo base_url('shop_detail_pembeli'); ?>" class="property-img">
                                     <div class="tag">Beli Sekarang</div>
                                     <div class="price-box"><span>Rp 150.000.000</div>
                                     <img class="d-block w-100" src="assets/img/properties/Sapi Brahman Putih.jpg" alt="properties">
@@ -168,10 +168,10 @@
                             </div>
                             <div class="detail">
                                 <h1 class="title">
-                                    <a href="properties-detailspembeli.html">Sapi Brahman</a>
+                                    <a href="<?php echo base_url('shop_detail_pembeli'); ?>">Sapi Brahman</a>
                                 </h1>
                                 <div class="location">
-                                    <a href="properties-detailspembeli.html">
+                                    <a href="<?php echo base_url('shop_detail_pembeli'); ?>">
                                         <i class="flaticon-pin"></i>123 Kathal St. Tampa City,
                                     </a>
                                 </div>
@@ -198,7 +198,7 @@
                     <div class="col-lg-6 col-md-6 col-sm-12">
                         <div class="property-box">
                             <div class="property-thumbnail">
-                                <a href="properties-detailspembeli.html" class="property-img">
+                                <a href="<?php echo base_url('shop_detail_pembeli'); ?>" class="property-img">
                                     <div class="tag">Beli Sekarang</div>
                                     <div class="price-box"><span>Rp 5.000.000</div>
                                     <img class="d-block w-100" src="assets/img/properties/Kambing Boer.jpg" alt="properties">
@@ -206,10 +206,10 @@
                             </div>
                             <div class="detail">
                                 <h1 class="title">
-                                    <a href="properties-detailspembeli.html">Kambing Boer</a>
+                                    <a href="<?php echo base_url('shop_detail_pembeli'); ?>">Kambing Boer</a>
                                 </h1>
                                 <div class="location">
-                                    <a href="properties-detailspembeli.html">
+                                    <a href="<?php echo base_url('shop_detail_pembeli'); ?>">
                                         <i class="flaticon-pin"></i>123 Kathal St. Tampa City,
                                     </a>
                                 </div>
@@ -236,7 +236,7 @@
                     <div class="col-lg-6 col-md-6 col-sm-12">
                         <div class="property-box">
                             <div class="property-thumbnail">
-                                <a href="properties-detailspembeli.html" class="property-img">
+                                <a href="<?php echo base_url('shop_detail_pembeli'); ?>" class="property-img">
                                     <div class="tag">Beli Sekarang</div>
                                     <div class="price-box"><span>Rp 125.000.000</div>
                                     <img class="d-block w-100" src="assets/img/properties/Sapi Simmental Coklat.jpg" alt="properties">
@@ -244,10 +244,10 @@
                             </div>
                             <div class="detail">
                                 <h1 class="title">
-                                    <a href="properties-detailspembeli.html">Sapi Simmental</a>
+                                    <a href="<?php echo base_url('shop_detail_pembeli'); ?>">Sapi Simmental</a>
                                 </h1>
                                 <div class="location">
-                                    <a href="properties-detailspembeli.html">
+                                    <a href="<?php echo base_url('shop_detail_pembeli'); ?>">
                                         <i class="flaticon-pin"></i>123 Kathal St. Tampa City,
                                     </a>
                                 </div>
@@ -274,7 +274,7 @@
                     <div class="col-lg-6 col-md-6 col-sm-12">
                         <div class="property-box">
                             <div class="property-thumbnail">
-                                <a href="properties-detailspembeli.html" class="property-img">
+                                <a href="<?php echo base_url('shop_detail_pembeli'); ?>" class="property-img">
                                     <div class="tag">Beli Sekarang</div>
                                     <div class="price-box"><span>Rp 5.000.000</div>
                                     <img class="d-block w-100" src="assets/img/properties/Kambing Jawarandu.jpg" alt="properties">
@@ -282,10 +282,10 @@
                             </div>
                             <div class="detail">
                                 <h1 class="title">
-                                    <a href="properties-detailspembeli.html">Kambing Jawa Randu</a>
+                                    <a href="<?php echo base_url('shop_detail_pembeli'); ?>">Kambing Jawa Randu</a>
                                 </h1>
                                 <div class="location">
-                                    <a href="properties-detailspembeli.html">
+                                    <a href="<?php echo base_url('shop_detail_pembeli'); ?>">
                                         <i class="flaticon-pin"></i>123 Kathal St. Tampa City,
                                     </a>
                                 </div>
