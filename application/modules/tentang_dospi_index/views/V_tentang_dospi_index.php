@@ -9,6 +9,7 @@
             </ul>
             <?php foreach($tampil as $tentangdospiindex) {
                 $id = $tentangdospiindex->id_tentang;
+                $gambar = $tentangdospiindex->gambar;
             ?>
         </div>
     </div>
@@ -21,7 +22,7 @@
         <div class="row">
             <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-xs-12">
                 <div class="about-slider-box simple-slider">
-                    <img class="d-block w-100" src="assets/img/about.jpg" alt="about">
+                    <img class="d-block w-100" src="<?= base_url (); ?>assets/img/properties/<?= $tentangdospiindex->gambar?>" alt="Image">
                 </div>
             </div>
             <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-xs-12">
