@@ -193,7 +193,7 @@ foreach ($tampil as $rey) {
         </div>
         <!-- Modal body -->
         <div class="modal-body">
-          <center><h6>Apakah Anda yakin Untuk Menghapus Pesan ini ???</h6></center>
+          <center><h6>Apakah Anda yakin Untuk Menghapus Product ini ???</h6></center>
         </div>
         <!-- Modal footer -->
         <div class="modal-footer">

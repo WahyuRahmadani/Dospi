@@ -24,7 +24,7 @@ class Product_saya extends MX_Controller {
 			'namafileview' 	=> "V_product_saya",
 			'tampil'		=>$this->m_product_saya->tampil()
 		);
-		echo Modules::run('template_dashboard/tampilCore2', $data);
+		echo Modules::run('template/tampilCore2', $data);
 	}
 
 	function edit(){
