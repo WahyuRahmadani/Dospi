@@ -67,11 +67,11 @@
                         <!-- Form start -->
                        <form method="post" action="<?php echo base_url().'rating/tambah' ?>" enctype="multipart/form-data">
                             <div class="rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star fa-2x" data-index="0"></i>
+                                <i class="fa fa-star fa-2x" data-index="1"></i>
+                                <i class="fa fa-star fa-2x" data-index="2"></i>
+                                <i class="fa fa-star fa-2x" data-index="3"></i>
+                                <i class="fa fa-star fa-2x" data-index="4"></i>
                                 <span>( 4 Reviews )</span>
                             </div>
                             <br></br>
@@ -98,6 +98,8 @@
     </div>
 </div>
 <!-- Contact section end -->
+
+
 
 <!-- Full Page Search -->
 <div id="full-page-search">
