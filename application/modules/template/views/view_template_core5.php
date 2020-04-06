@@ -241,7 +241,7 @@ $rows = $this->db->query("SELECT * FROM user where email='".$this->session->emai
                         
                         <!-- Modal footer -->
                         <div class="modal-footer">
-                          <a href="<?php echo base_url('halalaman_pembeli'); ?>" class="btn btn-danger" data-dismiss="modal">Tidak</a>          
+                          <a href="<?php echo base_url('halaman_pembeli'); ?>" class="btn btn-danger" data-dismiss="modal">Tidak</a>          
                           <a href="<?php echo base_url('halaman_index'); ?>" class="btn btn-success">Iya</a>
                         </div>
                         

@@ -37,24 +37,14 @@
             <div class="col-lg-12">
                 <div class="inline-search-area">
                     <div class="row row-4">
-                        <div class="col-xl-4 col-lg-2 col-md-4 col-sm-6 col-6 search-col">
+                        <div class="col-xl-10 col-lg-2 col-md-4 col-sm-6 col-6 search-col">
                             <select class="selectpicker search-fields" name="any-status">
                                 <option>Fillter</option>
                                 <option>Sapi</option>
                                 <option>Kambing</option>
                             </select>
                         </div>
-                        
-                        <div class="col-xl-6 col-lg-2 col-md-4 col-sm-6 col-6 search-col">
-                            <select class="selectpicker search-fields" name="bedrooms">
-                                <option>Jenis</option>
-                                <option>Sapi Limusin</option>
-                                <option>Sapi Brahman</option>
-                                <option>Sapi Bali</option>
-                                <option>Sapi Simmental</option>
-                            </select>
-                        </div>
-                        
+            
                         <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 search-col">
                             <button class="btn white-btn btn-search btn-block">
                                 <a href="properties-grid-leftside.html"><i class="fa fa-search"></i><strong>Cari</strong></a>

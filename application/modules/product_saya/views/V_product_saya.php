@@ -1,11 +1,10 @@
-
-            <div class="col-lg-12 col-md-12 col-sm-12 col-pad">
+<div class="col-lg-9 col-md-12 col-sm-12 col-pad">
                 <div class="content-area5">
                     <div class="dashboard-content">
                         <div class="dashboard-header clearfix">
                             <div class="row">
-                                <div class="col-sm-12 col-lg-12"><h4>Produk Kami</h4></div>
-                                <div class="col-lg-12 col-lg-12">
+                                <div class="col-sm-12 col-md-6"><h4>Produk Kami</h4></div>
+                                <div class="col-sm-12 col-md-6">
                                     <div class="breadcrumb-nav">
                                     </div>
                                 </div>
@@ -20,7 +19,7 @@ foreach ($tampil as $rey) {
 
  ?>
 
-         <?= form_open_multipart('product_saya/edit');  ?>                               
+         <?= form_open_multipart('product_saya/edit');  ?>      
                                 <tbody>
                                 <tr class="responsive-table">
                                     <td class="listing-photoo">
@@ -39,7 +38,7 @@ foreach ($tampil as $rey) {
                                 </tr>
                             </tbody>
 
-        <div class="modal fade" id="edit<?php echo $rey->id_datahewan ?>" style="top: 15%;">
+<div class="modal fade" id="edit<?php echo $rey->id_datahewan ?>" style="top: 15%;">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
 
@@ -182,9 +181,11 @@ foreach ($tampil as $rey) {
       <?= form_close(); ?>
     </div>
   </div>
-</div>
-    
-    <div class="modal fade" id="hapus<?php echo $rey->id_datahewan ?>" style="top: 15%;">
+</div>   
+
+
+
+<div class="modal fade" id="hapus<?php echo $rey->id_datahewan ?>" style="top: 15%;">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
         <!-- Modal Header -->
@@ -204,16 +205,48 @@ foreach ($tampil as $rey) {
         <!-- Modal footer -->
       </div>
     </div>
-  <?php } ?>
+  <?php } ?>                        
                             </table>
                         </div>
                     </div>
                     <p class="sub-banner-2 text-center">© 2020 Dospi.com.</p>
                 </div>
             </div>
-<!-- Dashboard end -->
 
-<!-- The Modal balas -->
+<script type="text/javascript">
 
 
- <!-- the end modal hapus --> 
+function tampilkanPreview(userfile,idpreview)
+{
+  var gb = userfile.files;
+  for (var i = 0; i < gb.length; i++)
+  {
+    var gbPreview = gb[i];
+    var imageType = /image.*/;
+    var preview=document.getElementById(idpreview);
+    var reader = new FileReader();
+    if (gbPreview.type.match(imageType))
+    {
+      //jika tipe data sesuai
+      preview.file = gbPreview;
+      reader.onload = (function(element)
+      {
+        return function(e)
+        {
+          element.src = e.target.result;
+        };
+      })(preview);
+      //membaca data URL gambar
+      reader.readAsDataURL(gbPreview);
+    }
+      else
+      {
+        //jika tipe data tidak sesuai
+        alert("Tipe file tidak sesuai. Gambar harus bertipe .png, .gif atau .jpg.");
+      }
+  }
+}
+</script>
+
+
+ 
